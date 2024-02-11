@@ -4,7 +4,7 @@ const nextConfig = {
   // experimental: {
   //   // target: "serverless",
   images: {
-    unoptimized: true,
+    // unoptimized: true,
     // allowFutureImage: true,
   },
   //   // optimizeCss: true,
