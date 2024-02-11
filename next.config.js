@@ -3,10 +3,10 @@ const nextBuildId = require("next-build-id");
 const nextConfig = {
   // experimental: {
   //   // target: "serverless",
-  images: {
-    // unoptimized: true,
-    // allowFutureImage: true,
-  },
+  // images: {
+  //   // unoptimized: false,
+  //   // allowFutureImage: true,
+  // },
   //   // optimizeCss: true,
   // },
 
