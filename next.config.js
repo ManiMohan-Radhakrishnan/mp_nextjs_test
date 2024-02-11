@@ -38,10 +38,6 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
-  exportPathMap: async function (defaultPathMap) {
-    delete defaultPathMap["/nft-marketplace"]; // Exclude the page from export
-    return defaultPathMap;
-  },
   generateBuildId: () => nextBuildId({ dir: __dirname }),
 };
 
