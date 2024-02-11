@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextBuildId = require("next-build-id");
 const nextConfig = {
-  output: "export",
-
   // experimental: {
   //   // target: "serverless",
 
