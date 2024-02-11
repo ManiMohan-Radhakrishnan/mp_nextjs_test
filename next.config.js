@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextBuildId = require("next-build-id");
 const nextConfig = {
+  output: "export",
   // experimental: {
   //   // target: "serverless",
 
   //   // optimizeCss: true,
   // },
-  distDir: "build",
   reactStrictMode: true,
   swcMinify: true,
   // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
