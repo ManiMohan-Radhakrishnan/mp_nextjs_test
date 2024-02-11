@@ -1,0 +1,26 @@
+.bundle-nft-details {
+  h5 {
+    color: #ec804c;
+  }
+  .bundle-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+      background: #ed804c26;
+      border: 0.1rem solid #ec804c4d;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffffa6;
+      &.active {
+        background: #ec804c4d;
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+@import "../../../styles/common";
+
+.joinnow-section {
+  padding: 8rem 0;
+  position: relative;
+
+  position: relative;
+  background-position: top left;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    padding: 4rem 0;
+    position: relative;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  &::before {
+    content: "";
+    background: linear-gradient(88deg, #361a86 8%, #ffeff7 90%);
+    background: linear-gradient(88deg, #361a8678 8%, #ffeff7 90%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    inset: 0 0 0 0;
+    backdrop-filter: blur(0.3rem);
+  }
+  .joinnow-flex {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    max-width: 85rem;
+    margin: auto;
+    align-items: center;
+    @media screen and (max-width: 991px) {
+      align-items: center;
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    .content-block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left;
+      margin: 0;
+      list-style: none;
+      flex-wrap: wrap;
+      width: 50%;
+      padding: 1rem;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 0;
+        max-width: 35rem;
+        margin-bottom: 0rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h4 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+    .joinwaitlist-box {
+      width: 50%;
+      max-width: 30rem;
+      // max-width: 50%;
+      background: transparent;
+      padding: 2rem;
+      border-radius: 1rem;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      .join-waitlist-form-block {
+        margin: auto;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h5 {
+          margin-bottom: 1rem;
+          font-weight: 400;
+        }
+        .join-waitlist-form {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          overflow: hidden;
+          flex-direction: column;
+          width: 100%;
+          @media screen and (max-width: 767px) {
+            align-items: center;
+          }
+          .getappLinkCheckbox {
+            text-align: left;
+
+            input {
+              height: 1rem;
+              padding: unset;
+              align-items: center;
+              margin-bottom: unset;
+              width: auto;
+            }
+            .link {
+              cursor: pointer;
+              &.link-orange {
+                color: #ea337f;
+              }
+            }
+          }
+          input {
+            width: 100%;
+            margin-bottom: 0.5rem;
+            height: 3.4rem;
+            box-shadow: none !important;
+            background: transparent;
+            color: #fff;
+            border: 0.1rem solid #ffffff !important;
+            padding: 0.5rem 1rem;
+            outline: 0 !important;
+            font-size: 1.1rem !important;
+            border-radius: 0.5rem;
+            @media screen and (max-width: 767px) {
+              background: #00000078;
+              color: #fff;
+              border: 0.1rem solid #ffffff !important;
+            }
+            &::placeholder {
+              color: #ffffff66;
+            }
+          }
+          button {
+            color: #fff;
+            display: block;
+            margin: 0 0.3rem 0;
+            padding: 0.5rem 1.5rem;
+            transition: 0.3s;
+            position: relative;
+            text-transform: capitalize;
+            font-size: 1rem;
+            background: #ea337f;
+            border: solid 1px transparent;
+            border-radius: 0.5rem;
+            font-family: "proxima-nova" !important;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            font-size: 1.2rem;
+            @media screen and (max-width: 767px) {
+              width: 100%;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+              border: solid 1px #ea337f !important;
+              background: transparent;
+              color: #ea337f !important;
+            }
+          }
+        }
+        .success-message {
+          width: 100%;
+          text-align: left;
+          color: #fff;
+          padding: 0.4rem;
+          padding: 0rem 1rem;
+          margin-bottom: 0.5rem;
+          a {
+            text-decoration: underline;
+            color: #ea337f;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "../../styles/common";
+
+.releasenotes-wrapper {
+  font-family: $proxima-nova;
+  font-weight: 400;
+
+  background: #1d1c2c;
+  padding: 1rem 5rem 5rem;
+  color: #fff !important;
+  img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 1rem 3rem 3rem;
+  }
+  @media screen and (max-width: 520px) {
+    padding: 1rem 1.5rem 3rem;
+  }
+
+  .heading-h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: $nunito-sans;
+  }
+
+  .c-tabs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 0.15rem solid #444454;
+    margin: 0rem 0 2rem;
+
+    .nav-tab {
+      margin: 0 0.5rem;
+      padding: 1.2rem 1.5rem;
+      border-radius: 0.2rem 0.2rem 0 0;
+      transition: 0.5s;
+      font-size: 1.2rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: #444454;
+      background-color: #161523;
+      background-color: #1615238a;
+      border-top: 0.2rem solid #444454;
+      user-select: none;
+      @media screen and (max-width: 520px) {
+        padding: 1rem 0.8rem;
+        font-size: 1rem;
+      }
+
+      &.active {
+        background-color: #161523;
+        color: #ed844c;
+        border-top: 0.2rem solid #ed844c;
+      }
+    }
+  }
+  .release-notes-card-box {
+    background-color: #12111d;
+    padding: 3rem;
+    border-radius: 0.2rem;
+    border-left: 0.3rem solid #ed834e;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: 520px) {
+      padding: 3rem 1.5rem;
+    }
+    .created-info {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #ffffffb3;
+      color: #718c7f;
+      font-family: $proxima-nova;
+      font-weight: 400;
+    }
+    .card-name {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      font-family: $nunito-sans;
+      @media screen and (max-width: 520px) {
+        font-size: 2rem;
+      }
+    }
+    .card-key-points {
+      li {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: #a5c6bc;
+        font-family: $proxima-nova;
+        font-weight: 400;
+      }
+      &.small-liner-inner {
+        li {
+          color: white;
+          .small-liner {
+            li {
+              color: #a5c6bc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.card-name {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: "Impact" !important;
+}
+.li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #a5c6bc;
+  font-family: $proxima-nova;
+  font-weight: 600;
+}
+h1.card-name {
+  font-family: "Impact" !important;
+}

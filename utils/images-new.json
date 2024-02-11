@@ -1,0 +1,86 @@
+{
+  "nft_banner": "https://cdn.guardianlink.io/product-hotspot/jumptrade/banner-video/nft-player-video.mp4",
+  "mcl_game": "https://cdn.guardianlink.io/product-hotspot/images/mcl-game-video_optimized_withoutaudio.mp4",
+  "game_video": "https://cdn.guardianlink.io/product-hotspot/jumptrade/banner-video/game-preview-video.mp4",
+
+  "live_badge": "https://cdn.guardianlink.io/product-hotspot/jumptrade/tournaments-images/live-badge-image.png",
+  "ts_image": "https://cdn.guardianlink.io/product-hotspot/jumptrade/tournaments-images/ts-image.png",
+  "price_1": "https://cdn.guardianlink.io/product-hotspot/jumptrade/tournaments-images/first-price.png",
+  "price_2": "https://cdn.guardianlink.io/product-hotspot/jumptrade/tournaments-images/second-price.png",
+  "price_3": "https://cdn.guardianlink.io/product-hotspot/jumptrade/tournaments-images/third-price.png",
+
+  "sent_unique": "https://cdn.guardianlink.io/product-hotspot/jumptrade/refer-images/sent-unique-image.png",
+  "refer_image": "https://cdn.guardianlink.io/product-hotspot/jumptrade/refer-images/refer-image.png",
+  "gift_image": "https://cdn.guardianlink.io/product-hotspot/jumptrade/refer-images/gift-image.png",
+  "link_image": "https://cdn.guardianlink.io/product-hotspot/jumptrade/refer-images/link.png",
+
+  "community_image": "https://cdn.guardianlink.io/product-hotspot/images/community_section.webp",
+
+  "apple_logo": "https://cdn.guardianlink.io/product-hotspot/jumptrade/footer-images/apple-image.png",
+  "google_logo": "https://cdn.guardianlink.io/product-hotspot/jumptrade/footer-images/google-play-image.png",
+
+  "mclgame_poster": "https://cdn.guardianlink.io/product-hotspot/images/mclgame-banner-poster-image.png",
+  "circle_image": "https://cdn.guardianlink.io/product-hotspot/jumptrade/banner-images/circle-image.png",
+  "chennai_champions": "https://cdn.guardianlink.io/product-hotspot/jumptrade/banner-images/chennai-champions.png",
+  "hero_poster": "https://cdn.guardianlink.io/product-hotspot/images/jumptrade/nftmarketplace-banner-poster-image-3.webp",
+
+  "rare_bg": "https://cdn.guardianlink.io/product-hotspot/images/rare_collections_bg.jpg",
+  "bat_image": "https://cdn.guardianlink.io/product-hotspot/jumptrade/rare-collections-images/bat-image.png",
+  "card": "https://cdn.guardianlink.io/product-hotspot/images/trading-card.png",
+  "right": "https://cdn.guardianlink.io/product-hotspot/images/Righthand_Batsman.png",
+  "left": "https://cdn.guardianlink.io/product-hotspot/jumptrade/hot-selling/left-hand-batsman.png",
+  "right_bowl": "https://cdn.guardianlink.io/product-hotspot/images/Righthand_Bowler.png",
+  "star": "https://cdn.guardianlink.io/product-hotspot/images/star.png",
+  "trophy": "https://cdn.guardianlink.io/product-hotspot/images/trophy.png",
+  "right_hand_bat": "https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/RH.png",
+  "left_hand_bat": "https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/LH.png",
+  "right_hand_bowl": "https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/RA.png",
+  "left_hand_bowl": "https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/LA.png",
+  "mcl_logo": "https://cdn.guardianlink.io/product-hotspot/jumptrade/rare-collections-images/mcl-logo.png",
+
+  "batsman_icon": "https://cdn.guardianlink.io/product-hotspot/jumptrade/play-earn-images/batsman-icon.png",
+  "cash": "https://cdn.guardianlink.io/product-hotspot/jumptrade/play-earn-images/real-cash-image.png",
+
+  "one_dollar_background": "https://cdn.guardianlink.io/product-hotspot/jumptrade/one-dollar-images/one-dollar-background.png",
+
+  "NotScheduledImage": "https://cdn.guardianlink.io/product-hotspot/images/MCL-tournament-schedule-placeholder-v2.png",
+  "updated_video": "https://cdn.guardianlink.io/product-hotspot/images/RADDX-home-banner-desktop-v2.mp4",
+  "mobile_raddx_video": "https://cdn.guardianlink.io/product-hotspot/images/RADDX-home-banner-mobile-v2.mp4",
+  "poster_image": "https://cdn.guardianlink.io/product-hotspot/images/RADDX-home-video-poster-v2.png",
+
+  "champion_pass_mob": "https://cdn.guardianlink.io/product-hotspot/images/MCL-NewYearBash-10000_V1.jpg",
+  "champion_pass_web": "https://cdn.guardianlink.io/product-hotspot/images/MCL-NewYearBash-10000-with-Padding_V1.png",
+  "champion_sold_out": "https://cdn.guardianlink.io/product-hotspot/images/MCL_Mega_Play_Pass_v1.png",
+
+  "santa_banner_contest_landing_web": "https://cdn.guardianlink.io/product-hotspot/images/SantaContest-desktop-banner-padding.png",
+  "santa_banner_contest_landing_mobile": "https://cdn.guardianlink.io/product-hotspot/images/SantaContest-mobile-banner.jpg",
+
+  "santa_banner_contest_landing_web_new": "https://cdn.guardianlink.io/product-hotspot/images/SantaContest-banner_Web.png",
+  "santa_banner_contest_landing_mobile_new": "https://cdn.guardianlink.io/product-hotspot/images/SantaContest-banner_Mobile.jpg",
+  "santa_banner_contest_landing_web_fullbanner": "https://cdn.guardianlink.io/product-hotspot/images/SantaContest-banner-Desktop-latest.jpg",
+
+  "mcl_shots_web": "https://cdn.guardianlink.io/product-hotspot/images/MCL-Action-Shots-banner-with-padding.png",
+  "mcl_shots_mobile": "https://cdn.guardianlink.io/product-hotspot/images/MCL-Action-Shots-banner-withoutpadding.jpg",
+
+  "spin_contest_landing_web": "https://cdn.guardianlink.io/product-hotspot/images/Spin-the-wheel-web-banner-with-padding_new.jpg",
+  "spin_contest_landing_mobile": "https://cdn.guardianlink.io/product-hotspot/images/Spin-the-wheel-web-banner-wo-padding_new.jpg",
+  "spin_wheel": "https://cdn.guardianlink.io/product-hotspot/images/Spin-Wheel-with-Prize-bg_new.png",
+
+  "crown_pass_web": "https://cdn.guardianlink.io/product-hotspot/images/mclpass/The-Crown-Clash_without-padding-Feb10.jpg",
+  "crown_pass_mob": "https://cdn.guardianlink.io/product-hotspot/images/mclpass/The-Crown-Clash_padding-Feb10.png",
+  "hot_selling_calendar": "https://cdn.guardianlink.io/product-hotspot/images/hot_selling-calendar_icon.png",
+  "raddx_web": "https://cdn.guardianlink.io/product-hotspot/images/RADDX-home-banner-desktop-v3.mp4",
+  "raddx_mobile": "https://cdn.guardianlink.io/product-hotspot/images/RADDX-home-banner-mobile-v3.mp4",
+  "fusor_banner_image": "https://cdn.guardianlink.io/product-hotspot/images/jumptrade/Fusor_bn_new_1.jpg",
+
+  "raddx_banner_image_web": "https://cdn.guardianlink.io/product-hotspot/images/Raddx-Live-banner-optimized.webp",
+  "raddx_banner_image_mobile": "https://cdn.guardianlink.io/product-hotspot/images/Raddx-Live-bannermobile-optimized.webp",
+  "mcl_founder_mobile_banner": "https://cdn.guardianlink.io/product-hotspot/images/jumptrade/MCL_Founder_Pass_Mobile_banner.webp",
+  "mcl_founder_desktop_banner": "https://cdn.guardianlink.io/product-hotspot/images/jumptrade/MCL_Founder_Pass_Desktop_banner.webp",
+  "mcllogo": "https://cdn.guardianlink.io/product-hotspot/images/mcl-players-bg-new.webp",
+
+  "callit_banner_video_one": "https://cdn.guardianlink.io/product-hotspot/videos/callit/Thecallit_new_web_latestone.mp4",
+
+  "callit_banner_video_mobile": "https://cdn.guardianlink.io/product-hotspot/videos/callit/Thecallit_new-mob-latestone.mp4",
+  "rental_pass": "https://cdn.guardianlink.io/product-hotspot/images/jumptrade/NFT-Rental-Pass-NFT-Collection.webp"
+}

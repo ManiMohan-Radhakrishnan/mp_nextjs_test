@@ -1,0 +1,75 @@
+@import "../../styles/common";
+
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+}
+
+@mixin gradient-button {
+  width: 16rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem 1.8rem;
+  border: none;
+  background: transparent linear-gradient(95deg, #ef9f5e 0%, #ec7c49 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin modal-header {
+  color: white;
+  background: transparent linear-gradient(97deg, #5d0e4e 0%, #722807 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 0px 16px #00000099;
+  border: 2px solid #671101;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+@mixin base-model {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  &-header {
+    @include modal-header;
+  }
+  &-body {
+    border-radius: 0 0 1.5rem 1.5rem;
+    @include flex-column;
+    h3 {
+      color: black;
+      
+    }
+
+    .button-block {
+      @include flex-row-center;
+      button {
+        @include gradient-button;
+      }
+    }
+  }
+}
+
+.spin-modal {
+  @include base-model;
+}
+
+.spin-wheel {
+  width: 100%;
+  min-height: 40rem;
+  canvas {
+    // width: 100%;
+    // height: 100%;
+  }
+}

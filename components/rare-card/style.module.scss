@@ -1,0 +1,87 @@
+@import "../../styles/common";
+
+.rare-card {
+  position: relative;
+  &:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+  .player-type {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    height: 2rem;
+    width: 1.5rem;
+    .player-type-img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+      background: #123c2e80;
+      border-radius: 0.3rem;
+      padding: 0.3rem 0;
+    }
+  }
+
+  .bat-type-2x {
+    // position: absolute;
+    // top: 1rem;
+    // left: 1rem;
+    // height: 2rem;
+    // width: 1.5rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 0.4rem;
+    height: 2rem;
+    width: 1.8rem;
+    .bat-type-2x-img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+      background: #123c2e80;
+      border-radius: 0.3rem;
+      // padding: 0.3rem 0;
+    }
+  }
+  .nft-card-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.6rem;
+  }
+  .nft-card-info {
+    .rare-nft {
+      &-title {
+        font-weight: 400;
+        margin-bottom: 0.3rem;
+        margin-top: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+        @media screen and (max-width: 767px) {
+          // margin-top: 3rem;
+        }
+      }
+      &-subtitle {
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+    .rare-nft-shot {
+      &-title {
+        font-weight: 400;
+        margin-bottom: 0.3rem;
+        margin-top: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: break-spaces;
+        @media screen and (max-width: 767px) {
+          // margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

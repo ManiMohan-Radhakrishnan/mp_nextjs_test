@@ -1,0 +1,283 @@
+@import "../../styles/common";
+
+section.trending-games-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 1rem;
+  padding-top: 3rem;
+  .title-block {
+    h6 {
+      color: #c4af63;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      text-align: center;
+      font-size: 2.9rem;
+      font-family: $nunito-sans;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        font-size: 2.9rem;
+      }
+    }
+  }
+  .trend-card-block {
+    position: relative;
+    display: flex;
+    width: 100%;
+    // max-width: 80rem;
+    padding: 0 6rem !important;
+    gap: 1rem;
+    justify-content: center;
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+      padding: 0 2rem !important;
+    }
+    // @media screen and (max-width: 1024px) {
+    //   flex-wrap: wrap;
+    //   padding: 0 2rem !important;
+    // }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    .trend-card-box {
+      background-color: #131614;
+      height: 20rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(48% - 1rem);
+      border-radius: 0.5rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 100%;
+        transform: skewX(-30deg) translateX(-13rem);
+      }
+      @media screen and (max-width: 767px) {
+        width: calc(100%);
+      }
+      .content-box {
+        // width: 50%;
+        padding: 0 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        z-index: 2;
+        position: relative;
+        .badge-box {
+          position: relative;
+          margin-bottom: 1rem;
+          padding: 0rem 0 0.5rem;
+          display: flex;
+          align-items: center;
+          .icon-box {
+            position: relative;
+            padding: 0.4rem 0.4rem 0.4rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              font-size: 1.2rem;
+            }
+          }
+          .info {
+            padding-left: 0.5rem;
+          }
+        }
+
+        h3 {
+          font-weight: 400;
+          font-size: 1.3rem;
+          margin-top: 1.5rem;
+          span {
+            display: block;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-top: 0.4rem;
+          }
+        }
+        .btn-box {
+          position: sticky;
+          top: calc(100% - 4rem);
+          padding: 0 !important;
+
+          &::before {
+            content: "";
+            position: absolute;
+            inset: -0.1rem;
+            border-radius: 0.5rem;
+            z-index: -1;
+          }
+          span {
+            display: flex;
+            padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+            color: #fff;
+            background: #000;
+            border-radius: 0.4rem;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+          }
+        }
+      }
+      .img-box {
+        // width: 50%;
+        position: relative;
+        height: 18rem;
+        width: 16rem;
+        display: flex;
+        overflow: hidden;
+        justify-content: flex-end;
+        // width: 100%;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;
+        // top: 0;
+        bottom: 0;
+        z-index: 1;
+        &.hurley-img {
+          width: 13rem;
+          @media screen and (min-width: 360px) {
+            width: 16rem;
+          }
+        }
+        img {
+          height: unset;
+          width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      &.mcl-card-box {
+        background-color: #083018;
+        &::before {
+          background: transparent
+            linear-gradient(181deg, #376649c7 0%, #fdfdfd00 100%) 0% 0%
+            no-repeat padding-box;
+        }
+        .content-box {
+          .badge-box {
+            .icon-box {
+              background: transparent
+                linear-gradient(219deg, #12c657 0%, #007d90 100%) 0% 0%
+                no-repeat padding-box;
+              svg {
+                color: #0a3119;
+              }
+            }
+          }
+          h3 {
+            span {
+              color: #7dd69f;
+            }
+          }
+          .btn-box {
+            &::before {
+              background: transparent
+                linear-gradient(256deg, #12c657 0%, #007d90 100%) 0% 0%
+                no-repeat padding-box;
+            }
+            span {
+              background: #0a3119;
+            }
+          }
+        }
+      }
+      &.raddx-card-box {
+        background-color: #181824;
+        &::before {
+          background: transparent
+            linear-gradient(240deg, #55417e 0%, #1a181e 100%) 0% 0% no-repeat
+            padding-box;
+        }
+        .content-box {
+          .badge-box {
+            .icon-box {
+              background: transparent
+                linear-gradient(219deg, #b291f4 0%, #c83ab1 100%) 0% 0%
+                no-repeat padding-box;
+              svg {
+                color: #30283d;
+              }
+            }
+          }
+          h3 {
+            span {
+              color: #c7abff;
+            }
+          }
+          .btn-box {
+            &::before {
+              background: transparent
+                linear-gradient(256deg, #b591ff 0%, #ea40cf 100%) 0% 0%
+                no-repeat padding-box;
+            }
+            span {
+              background: #30283d;
+            }
+          }
+        }
+      }
+      &.hurley-card-box {
+        background-color: #162838;
+        &::before {
+          background: transparent
+            linear-gradient(240deg, #376649c7 0%, #fdfdfd00 100%) 0% 0%
+            no-repeat padding-box;
+        }
+        .content-box {
+          .badge-box {
+            .icon-box {
+              background: transparent
+                linear-gradient(219deg, #91f0f4 0%, #3a81c8 100%) 0% 0%
+                no-repeat padding-box;
+              svg {
+                color: #30283d;
+              }
+            }
+          }
+          h3 {
+            span {
+              color: #7dd6cf;
+            }
+          }
+          .btn-box {
+            &::before {
+              background: transparent
+                linear-gradient(256deg, #12c6b1 0%, #004890 100%) 0% 0%
+                no-repeat padding-box;
+            }
+            span {
+              background: #213c3d;
+            }
+          }
+        }
+      }
+    }
+  }
+  .game-card-block {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    img.game-img {
+      border: 1px solid #ec7c49;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 35rem;
+      object-fit: cover;
+    }
+  }
+}

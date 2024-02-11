@@ -1,0 +1,563 @@
+.pop-cancel-body-container {
+  background: #0e0e1c !important;
+  color: #fff;
+  box-shadow: 1rem 0 1.6rem #e7e7e9cc;
+  position: relative;
+  .pop-cancel-nft-details {
+    position: relative;
+    height: 100vh;
+
+    .pop-cancel-head-content {
+      display: flex;
+      padding: 1rem;
+      justify-content: space-between;
+
+      .pop-cancel-title {
+        font-size: 2rem;
+        font-family: $proxima-nova;
+        font-weight: 700;
+      }
+      .close-button-pop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg,
+        img {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+
+    .pop-cancel-progress {
+      background: #4a4a54;
+      .progress-complete {
+        background: #ef9d5d;
+        padding: 0.2rem;
+        width: 25%;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+
+      &.error-progress {
+        .progress-complete {
+          background: #f21e00;
+        }
+      }
+
+      &.loading {
+        .progress-complete {
+          background: #9c9c9b;
+        }
+      }
+    }
+
+    .error-float-container {
+      position: absolute;
+      top: 8rem;
+      padding: 0 2rem;
+      z-index: 10;
+      width: 100%;
+
+      .error-container {
+        background: #f21e00;
+        margin-bottom: 0.6rem;
+        border-radius: 0.5rem;
+        padding: 1rem 1rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .btn-cls {
+          position: absolute;
+          right: 0.4rem;
+          top: 0.4rem;
+        }
+
+        .error-text {
+          flex: 1;
+          font-family: $proxima-nova;
+          font-weight: 400;
+          font-size: 0.9rem;
+        }
+
+        .time-details {
+          flex: 1;
+
+          .time-title {
+            font-family: $proxima-nova;
+            font-weight: 600;
+            font-size: 0.9rem;
+          }
+          .time-counter {
+            .alert-counter-time {
+              font-family: $proxima-nova;
+              font-weight: 600;
+              font-size: 1.5rem;
+            }
+
+            .alert-counter-interval {
+              font-family: $proxima-nova;
+              font-weight: 400;
+              font-size: 0.8rem;
+            }
+
+            .alert-counter-gap {
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        .btn-error-button {
+          font-family: $proxima-nova;
+          font-weight: 600;
+          background: #f21e00;
+          font-size: 0.8rem;
+          outline: none;
+          border: 1px solid white;
+          color: white;
+          padding: 0.5rem 1rem;
+
+          &:hover {
+            background: white;
+            color: #f21e00;
+          }
+        }
+
+        .error-details {
+          .error-title {
+            font-family: $proxima-nova;
+            font-weight: 600;
+            font-size: 1rem;
+          }
+
+          .error-desc {
+            font-family: $proxima-nova;
+            font-weight: 600;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .pop-cancel-nft-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+
+      img,
+      video {
+        max-height: 25vh;
+        object-fit: scale-down;
+        border-radius: 0.7rem;
+        overflow: hidden;
+      }
+
+      audio {
+        margin-top: 1rem;
+        width: 75%;
+      }
+
+      &.preview {
+        img,
+        video {
+          max-height: 25vh;
+        }
+      }
+    }
+    .pop-author-name {
+      font-family: $proxima-nova;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: left !important;
+    }
+
+    .pop-cancel-nft-title {
+      font-family: $proxima-nova;
+      font-weight: 600;
+      font-size: 1.4rem;
+      padding: 0 1rem;
+    }
+
+    .input-cancel-container {
+      padding: 0 1.5rem;
+      .input-cancel-text {
+        font-size: 1rem;
+        color: #000000;
+        font-family: $proxima-nova;
+        font-weight: 600;
+        font-weight: normal;
+        text-align: start;
+      }
+
+      .input-cancel-wrap {
+        border: 2px solid #222;
+        border-radius: 0.6rem;
+        display: flex;
+        align-items: center;
+
+        .cancel-currency {
+          color: #000000;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          font-size: 1.8rem !important;
+          padding-left: 1.1rem;
+        }
+
+        .input-cancel {
+          width: 100%;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          font-size: 1.8rem !important;
+          padding: 0.6rem 1.1rem 0.6rem 0.1rem;
+          outline: none;
+          border-radius: 0.6rem;
+          border: none;
+        }
+      }
+
+      .input-cancel-quantity-container {
+        border: 2px solid #222;
+        border-radius: 0.6rem;
+        display: flex;
+        align-items: center;
+        .cancel-currency {
+          font-size: 2rem;
+          padding-right: 0.3rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+        }
+        .input-cancel-quantity {
+          width: 100%;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          font-size: 1.8rem !important;
+          padding: 0.6rem 1.1rem;
+          outline: none;
+          border-radius: 0.6rem;
+          border: none;
+        }
+
+        .quantity-to-value {
+          color: #d3d3d6;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          padding-right: 1.5rem;
+          font-size: 1.3rem !important;
+        }
+      }
+
+      .balance-details {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-family: $proxima-nova;
+        font-weight: 600;
+        color: #000;
+      }
+
+      &.error-bid {
+        .input-cancel-text {
+          color: #f21e00;
+        }
+
+        .input-cancel-wrap {
+          border: 2px solid #f21e00;
+          .cancel-currency {
+            color: #f21e00;
+          }
+          .input-cancel {
+            color: #f21e00;
+          }
+        }
+      }
+
+      &.error-balance-float {
+        .input-cancel-quantity-container {
+          border: 2px solid #f21e00;
+
+          .input-cancel-quantity {
+            color: #f21e00;
+          }
+        }
+      }
+
+      &.error-balance {
+        .balance-details {
+          color: #f21e00;
+        }
+
+        .input-cancel-wrap {
+          border: 2px solid #f21e00;
+          .cancel-currency {
+            color: #f21e00;
+          }
+          .input-cancel {
+            color: #f21e00;
+          }
+        }
+
+        .input-cancel-quantity-container {
+          border: 2px solid #f21e00;
+
+          .input-cancel-quantity {
+            color: #f21e00;
+          }
+        }
+      }
+    }
+
+    .sucess-title {
+      text-align: center;
+      text-align: center;
+      padding-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(60vh - 13rem);
+      &.cancel-confirm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .message {
+        font-family: $proxima-nova;
+        font-weight: 600;
+        font-size: 1.6rem;
+        padding: 0 2rem;
+      }
+    }
+
+    .success-summary-container {
+      padding: 0 4rem;
+      .success-summary {
+        display: flex;
+        justify-content: space-between;
+        font-family: $proxima-nova;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0.5rem 0 0.5rem 0;
+        border-bottom: 1px solid #000000;
+
+        .bold {
+          font-family: $proxima-nova;
+          font-weight: 700;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .bottom-area {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      .terms {
+        font-family: $proxima-nova;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        padding: 0 1rem;
+      }
+
+      .bottom-content-pop {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+
+        -webkit-box-shadow: 0px -1px 5px #e7e7e957;
+        -moz-box-shadow: 0px -1px 5px #e7e7e957;
+        box-shadow: 0px -1px 5px #e7e7e957;
+
+        .back-button {
+          cursor: pointer;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          border-radius: 50rem;
+          display: block;
+          margin: 0 auto 1rem;
+          padding: 0.6rem 2rem;
+          transition: 0.3s;
+          position: relative;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 1.1rem;
+          border: solid 1px #ec7c49;
+          background: transparent;
+          color: #ec7c49 !important;
+
+          &:hover,
+          &:focus,
+          &:active {
+            background: transparent
+              linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0% 0% no-repeat
+              padding-box;
+            border: solid 1px transparent;
+            color: #fff !important;
+          }
+        }
+        .place-cancel-button {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .place-cancel-btn-pop {
+            font-family: $proxima-nova;
+            font-weight: 600;
+
+            border-radius: 50rem;
+            color: #fff;
+            display: block;
+            width: 100%;
+            margin: 0 auto 1rem;
+            padding: 0.6rem 2rem;
+            transition: 0.3s;
+            position: relative;
+            font-family: $proxima-nova;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            background: transparent
+              linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0% 0% no-repeat
+              padding-box;
+            border: solid 1px transparent;
+
+            &:hover,
+            &:focus,
+            &:active {
+              border: solid 1px #ec7c49;
+              background: transparent;
+              color: #ec7c49 !important;
+            }
+            span {
+              position: relative;
+              z-index: 2;
+              color: #fff;
+            }
+
+            &:disabled {
+              background: #daa07e;
+              color: rgba(250, 250, 249, 0.8) !important;
+              border: none;
+              opacity: 0.6;
+
+              &.process {
+                background-color: #daa07e;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .pop-signin {
+      margin: 10rem 2rem 10rem 2rem;
+      .pop-signin-title {
+        font-size: 2rem;
+        font-family: $proxima-nova;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.pop-cancel-bodyContent {
+  height: calc(100% - 15rem);
+  overflow: hidden;
+  overflow-y: auto;
+  &.success {
+    height: calc(100% - 20rem);
+  }
+}
+
+.pop-nft-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  padding: 0 1.5rem;
+  width: 100%;
+  .pop-nft-media {
+    margin-top: 0;
+    img,
+    video {
+      max-height: 12rem;
+      object-fit: cover;
+      border-radius: 0.7rem;
+      overflow: hidden;
+      width: 12rem;
+      object-position: top;
+    }
+  }
+  .pop-nft-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+    min-height: 15rem;
+    .erc-type {
+      font-family: $proxima-nova;
+      font-weight: 600;
+      line-height: 1;
+      font-size: 1.8rem;
+      margin: 0.2rem 0 0.5rem;
+      span {
+        font-size: 1.5rem;
+        color: #9c9c9b;
+        font-family: $proxima-nova;
+        font-weight: 400;
+      }
+    }
+
+    .pop-author-name {
+      font-size: 1.2rem;
+      font-family: $proxima-nova;
+      font-weight: 400;
+      text-align: left !important;
+      margin-top: 0.5rem !important;
+    }
+    .pop-nft-title {
+      font-family: $proxima-nova;
+      font-weight: 700;
+      font-size: 2rem;
+      padding: 0;
+      text-align: left !important;
+      line-height: 1.2;
+      margin-top: 0.2rem;
+    }
+    .price-box {
+      position: sticky;
+      top: 100%;
+      .price-title {
+        font-family: $proxima-nova;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+      h5 {
+        margin: 0;
+        .dollar {
+          font-size: 1.8rem;
+          @media screen and (max-width: 520px) {
+            font-size: 1.5rem;
+          }
+        }
+        .jtPoints {
+          font-size: 1.2rem;
+          color: #ef9d5d;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

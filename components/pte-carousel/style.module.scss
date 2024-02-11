@@ -1,0 +1,165 @@
+@import "../../styles/common";
+.jt-pte-carousel {
+  background: #1d1c2c;
+  padding: 5rem 0;
+  position: relative;
+  .jt-pte-carousel-header {
+    position: relative;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto 4rem;
+    .gold-heading {
+      color: #c4af63;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .bold-heading {
+      text-align: center;
+      font-size: 3rem;
+      font-family: $nunito-sans;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 767px) {
+        font-size: 2.3rem;
+      }
+    }
+    .pte-description {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #ebebebcc;
+      font-weight: 400;
+    }
+  }
+
+  .pte-carousel {
+    .carousel-item {
+      position: relative;
+      border-radius: 1rem;
+      overflow: hidden;
+      .golden-content-wrapper {
+        padding: 2rem;
+        // background: linear-gradient(131deg, #0b0043 20%, #8900de 180%);
+        // min-height: 18rem;
+        position: relative;
+        &.one {
+          background: linear-gradient(131deg, #0b0043 20%, #8900de 180%);
+          &:after {
+            content: "";
+            background-image: url("https://cdn.guardianlink.io/product-hotspot/jumptrade/play-earn-images/batsman-icon.png");
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+        &.two {
+          background: transparent
+            linear-gradient(136deg, #2a4000 0%, #003a53 100%) 0% 0% no-repeat
+            padding-box;
+          &:after {
+            content: "";
+            background-image: url("https://cdn.guardianlink.io/product-hotspot/images/jumptrade/tournament-card-bg.png");
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.3;
+          }
+        }
+        &.three {
+          background: transparent
+            linear-gradient(135deg, #5d0e4e 0%, #722807 100%) 0% 0% no-repeat
+            padding-box;
+          &:after {
+            content: "";
+            background-image: url("https://cdn.guardianlink.io/product-hotspot/jumptrade/play-earn-images/real-cash-image.png");
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-position: top right;
+          }
+        }
+        h4 {
+          font-size: 1.4rem;
+          color: #c4af63;
+          font-weight: 700;
+        }
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          max-width: 19rem;
+        }
+        p {
+          font-size: 1.1rem;
+          color: #e2e2e2e6;
+          font-weight: 400;
+        }
+      }
+      .video-wrapper {
+        position: relative;
+
+        .video-overlay {
+          padding: 2rem;
+          // position: absolute;
+          inset: 0 0 0 0;
+          background: #000000ad;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 15rem;
+          width: 100%;
+          .play-btn {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            cursor: pointer;
+          }
+          p {
+            display: flex;
+            align-self: flex-start;
+            color: #ebebeb;
+            font-size: 1.2rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// .video-container {
+//   height: 100vh;
+//   .trailer-container {
+//     position: relative;
+//     .trailer-close-btn {
+//       position: absolute;
+//       color: #fff;
+//       cursor: pointer;
+//       top: 5rem;
+
+//       .close-comp {
+//         background: transparent;
+//         // border: 2px solid #e1ff04;
+//         border-radius: 4px;
+//         // padding: 1rem 2rem;
+//         font-size: 1.5rem;
+//         font-family: "neue_helvetica_extended_bold" !important;
+//         text-transform: uppercase;
+//         letter-spacing: 3px;
+//       }
+//     }
+//     iframe {
+//       height: 100vh;
+//     }
+//   }
+// }

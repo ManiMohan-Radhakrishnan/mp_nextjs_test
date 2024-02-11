@@ -1,0 +1,14 @@
+.basic-multi-select {
+  &__control {
+    border-color: #d6d4d6 !important;
+    box-shadow: none !important;
+    background-color: #edebed !important;
+  }
+  &__option {
+    background-color: #ffffff !important;
+    color: black !important;
+    &--is-focused {
+      background-color: #d6d4d6 !important;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/common";
+
+.whatsapp-chat {
+  position: fixed;
+  inset: auto 1rem 6rem auto;
+  z-index: 1019;
+  display: none;
+  img {
+    height: 4.2rem;
+    width: 4.2rem;
+  }
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}

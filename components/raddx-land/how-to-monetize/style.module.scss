@@ -1,0 +1,173 @@
+@import "../../../styles/common";
+
+.monetize-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #0d000e;
+  flex-direction: column;
+  gap: 0;
+  padding: 2rem 0;
+  @media screen and (max-width: 580px) {
+    padding: 1rem 0;
+  }
+
+  .sec-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    h2 {
+      font-family: $proxima-nova;
+      font-weight: 600;
+      font-size: 3rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      text-align: center;
+      @media screen and (max-width: 580px) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      color: #ffffffcc;
+      font-size: 1.2rem;
+      max-width: 45rem;
+      @media screen and (max-width: 580px) {
+        font-size: 1rem;
+      }
+    }
+    img {
+      height: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+      width: 100%;
+      max-width: 42rem;
+      margin-bottom: 2rem;
+      @media screen and (max-width: 767px) {
+        max-width: 25rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+  .content-block {
+    text-align: left;
+    padding: 1.5rem;
+    // border: 0.1rem solid #7d228287;
+    border-radius: 0.8rem;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    h3 {
+      font-family: $proxima-nova;
+      font-weight: 600;
+      font-size: 3rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        font-size: 2.4rem;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 2.2rem;
+      }
+      @media screen and (max-width: 580px) {
+        font-size: 2rem;
+      }
+    }
+    h4 {
+      font-family: $nunito-sans-new;
+      // justify-content: center !important;
+      // align-items: center !important;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #e6d44c;
+      margin-bottom: 0.2rem;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        font-size: 1.6rem;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+      @media screen and (max-width: 580px) {
+        font-size: 1.2rem;
+      }
+    }
+    p {
+      color: #ffffffcc;
+      font-size: 1.2rem;
+      max-width: 45rem;
+      @media screen and (max-width: 580px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .img-block {
+    height: 36rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @media screen and (max-width: 580px) {
+      height: 28rem;
+    }
+    &::before {
+      content: "";
+      background-image: url("../../../images/drop/vip-pass/overall-bg.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      inset: 0;
+      animation: blinker 3s linear infinite;
+      filter: brightness(0.5);
+    }
+    img {
+      height: auto;
+      width: auto;
+      height: 14rem;
+      position: relative;
+      width: 100%;
+      object-fit: contain;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        height: 12rem;
+      }
+      @media screen and (max-width: 580px) {
+        height: 10rem;
+      }
+      &.three {
+        height: 13rem;
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          height: 11rem;
+        }
+        @media screen and (max-width: 580px) {
+          height: 9rem;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes blinker {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes blinker {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+}

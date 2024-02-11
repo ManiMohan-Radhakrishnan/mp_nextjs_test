@@ -1,0 +1,18 @@
+.banner-section {
+  @media screen and (max-width: 767px) {
+    background: url("../../../images/drop/bat-drop/banner/mobile-banner-image.jpg");
+  }
+  @media screen and (min-width: 767px) {
+    background: url("../../../images/drop/bat-drop/banner/web-banner-image.jpg");
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // padding: 5rem 0rem 0rem;
+  padding: 0rem;
+  position: relative;
+  margin-top: -3rem;
+  padding-top: 3rem;
+}

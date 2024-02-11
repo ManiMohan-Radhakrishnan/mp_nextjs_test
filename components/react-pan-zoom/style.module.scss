@@ -1,0 +1,29 @@
+@import "../../styles/common";
+
+.pan-image {
+  overflow: hidden;
+  .controls {
+    position: absolute;
+    right: 1.5rem;
+    z-index: 2;
+    top: 1.5rem;
+    user-select: none;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0px 2px 6px rgba(53, 67, 93, 0.32);
+    .control {
+      text-align: center;
+      cursor: pointer;
+      height: 3rem;
+      width: 3rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+      }
+      svg {
+        color: #545454;
+        font-size: 3rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+}

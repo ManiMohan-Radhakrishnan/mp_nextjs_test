@@ -1,0 +1,67 @@
+@import "../../../styles/common";
+.join-waitlist-form-block {
+  margin: auto;
+
+  overflow: hidden;
+  max-width: 35rem;
+  width: 100%;
+
+  .join-waitlist-form {
+    border: 0.1rem solid #de6f00 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //   margin: auto;
+    border-radius: 50rem;
+    overflow: hidden;
+    //   max-width: 35rem;
+    //   width: 100%;
+    input {
+      height: 3.4rem;
+      border: none !important;
+      box-shadow: none !important;
+      background: #000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      width: calc(100% - 12rem);
+      outline: 0 !important;
+      font-size: 1.1rem !important;
+      &::placeholder {
+        color: #bfbfc0;
+      }
+    }
+    button {
+      width: calc(12rem);
+      height: 3.4rem;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      position: relative;
+      font-size: 1rem;
+      background: #de6f00;
+      border: solid 1px transparent;
+      border-radius: 0 50rem 50rem 0;
+      font-family: $proxima-nova;
+      font-weight: 400;
+      padding: 0.5rem 0.5rem;
+      font-size: 1.2rem;
+      &:hover,
+      &:focus,
+      &:active {
+        border: solid 0.1rem #de6f00;
+        background: #fff;
+        color: #de6f00 !important;
+      }
+    }
+  }
+  .success-message {
+    text-align: left;
+    color: white;
+    padding: 0.4rem;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../../styles/common";
+.fusor-example-section {
+  position: relative;
+  padding: 4rem 0;
+  .content-block {
+    margin-bottom: 2rem;
+    h4 {
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #ffffff99;
+      font-size: 1.2rem;
+    }
+
+    &.combine-case {
+      border: 0.1rem dashed #ff7f00;
+      padding: 2rem;
+      h4 {
+        color: #ff7f00;
+      }
+    }
+  }
+
+  .image-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0 4rem;
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.sec-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 3rem;
+  h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  .sec-title {
+    color: #ff7f00;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-family: $nunito-sans;
+    @media screen and (max-width: 767px) {
+      font-size: 1.8rem;
+    }
+  }
+  p {
+    color: #ffffffcc;
+    font-size: 1.2rem;
+    &.sec-info-block {
+      color: #ff7f00;
+      border: 0.1rem solid #ff7f00;
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

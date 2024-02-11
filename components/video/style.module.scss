@@ -1,0 +1,56 @@
+@import "../../styles/common";
+
+.app-video {
+  max-height: 320px;
+  height: 320px;
+  background-color: #000;
+}
+
+.app-poster {
+  max-height: 320px;
+  height: 320px;
+  background-color: #000;
+  object-fit: none;
+}
+
+.video-container {
+  position: relative;
+  .play-img-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    .play-btn {
+      border: 0.15rem solid #fff;
+      background-color: #2b333fb3;
+      border-radius: 0.3em;
+      transition: all 0.4s;
+      font-size: 3em;
+      line-height: 1.5em;
+      height: 1.3em;
+      width: 2.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      svg {
+        color: #fff !important;
+        height: 1.5rem;
+      }
+    }
+    &:hover {
+      .play-btn {
+        outline: 0;
+        background-color: #73859f80;
+        transition: all 0s;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.expand-history-owner img {
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50rem;
+  margin-right: 0.6rem;
+  object-fit: cover;
+  object-position: center;
+}
+.orderDetails .expand-history-owner {
+  display: flex;
+  align-items: center;
+}
+.orderDetails td {
+  vertical-align: middle;
+  font-family: $proxima-nova;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  color: #fff;
+  border-bottom: 2px solid #363641;
+}
+.orderDetails table {
+  position: relative;
+  border-collapse: collapse;
+}
+.orderDetails thead {
+  color: #fff;
+}
+.orderDetails thead th {
+  background-color: #0e0e1c;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  position: sticky;
+  top: 0;
+  min-width: 8rem;
+  white-space: nowrap;
+  font-weight: 400;
+  border-bottom: 2px solid #363641;
+}
+.orderDetails thead th:first-child {
+  border-top-left-radius: 10px;
+}
+.orderDetails thead th:last-child {
+  border-top-right-radius: 10px;
+}
+.orderBtn {
+  font-size: 1rem;
+  padding: 6px 15px;
+}
+.orderDetails {
+  max-height: 70vh;
+  overflow: auto;
+  padding-bottom: 0;
+}
+.status {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.details-link {
+  text-decoration: underline !important;
+  cursor: pointer;
+  color: #ee8a52 !important;
+}

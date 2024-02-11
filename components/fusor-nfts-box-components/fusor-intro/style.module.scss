@@ -1,0 +1,149 @@
+@import "../../../styles/common";
+.hero-banner-section {
+  position: relative;
+  padding: 8rem 0;
+  &::before {
+    content: "";
+    position: absolute;
+    background: transparent
+      radial-gradient(closest-side at 50% 19%, #de6f00d9 0%, #1d2133e3 100%) 0%
+      0% no-repeat padding-box;
+    mix-blend-mode: overlay;
+    opacity: 0.85;
+    inset: 0;
+  }
+  .hero-content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .title {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+
+      font-family: $nunito-sans;
+      span {
+        color: #ff7f00;
+        display: flex;
+        font-family: $hubolt-sans-black-narrow;
+        font-size: 3.6rem;
+        letter-spacing: 0.3rem;
+        @media screen and (max-width: 767px) {
+          font-size: 2.6rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+    p {
+      color: #ffffff99;
+      max-width: 70rem;
+      font-size: 1.4rem;
+
+      span {
+        color: #ff7f00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    .btn-block {
+      margin-top: 2rem;
+      .theme-btn {
+        display: block;
+        margin: 0 0.3rem 0;
+        transition: 0.3s;
+        position: relative;
+        padding: 0.8rem 2.5rem;
+        text-transform: capitalize;
+        border-radius: 50rem;
+        font-family: $proxima-nova;
+        font-weight: 600;
+        // padding: 0.6rem 2.5rem;
+        font-size: 1.2rem;
+        border: solid 1px #ec7c49;
+
+        background: transparent
+          linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0% 0% no-repeat
+          padding-box;
+        color: #ffffff;
+
+        &:hover,
+        &:focus,
+        &:active {
+          border: solid 1px #ec7c49;
+          background: transparent;
+          color: #ec7c49 !important;
+        }
+        @media screen and (max-width: 767px) {
+          padding: 0.6rem 1.8rem;
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 430px) {
+          margin-bottom: 1rem;
+        }
+
+        &.rounded-bordered {
+          background: transparent !important;
+          border: 0.1rem solid #ec7c49 !important;
+          span {
+            color: #ec7c49 !important;
+          }
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            border: solid 1px transparent;
+            background: transparent
+              linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0% 0% no-repeat
+              padding-box !important;
+            span {
+              color: #ffffff !important;
+            }
+            svg {
+              fill: #ffffff !important;
+            }
+          }
+          &.icon-btn {
+            height: 2.3rem;
+            width: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              height: 1.2rem;
+              width: 1.2rem;
+              color: #ec7c49;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+              svg {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+
+        &:disabled {
+          background: #ec7c49;
+          color: #ffffff;
+          border: none;
+          opacity: 0.6;
+        }
+        span {
+          position: relative;
+          z-index: 2;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

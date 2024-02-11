@@ -1,0 +1,313 @@
+@import "../../styles/common";
+
+section.claimpassHome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 1rem 0rem;
+  padding-top: 3rem;
+  .title-block {
+    margin-bottom: 2rem;
+    h6 {
+      color: #c4af63;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      text-align: center;
+      font-size: 2.9rem;
+      font-family: $nunito-sans;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        font-size: 2.9rem;
+      }
+    }
+    p {
+      max-width: 42rem;
+      margin: auto;
+    }
+  }
+  .passclaim-card {
+    position: relative;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1rem auto 1rem;
+    border-radius: 1.2rem;
+    background: linear-gradient(141deg, #1b4f6f52, #220b002e, #1b4f6f52);
+    padding: 1rem;
+    border: 0.1rem solid #6eacd4;
+    @media screen and (max-width: 880px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .content-block {
+      position: relative;
+      z-index: 2;
+      padding: 1rem;
+      @media screen and (max-width: 767px) {
+        padding: 1rem;
+      }
+
+      .loot-timer-block {
+        max-width: 20rem;
+        text-align: left;
+        h4 {
+          margin-bottom: 0;
+          font-size: 0.9rem;
+          color: #8e8b8b;
+        }
+      }
+      h2 {
+        font-size: 2.5rem;
+        // max-width: 55rem;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 991px) {
+          font-size: 2rem;
+          // max-width: 41rem;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 1.6rem;
+          // max-width: 34rem;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        color: #e2e2e2;
+        margin-bottom: 1.5rem;
+        @media screen and (max-width: 991px) {
+          font-size: 1rem;
+        }
+      }
+      .theme-btn {
+        color: #fff;
+        display: block;
+        margin: 0 !important;
+        padding: 0.5rem 1.2rem;
+        transition: 0.3s;
+        position: relative;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        background: transparent linear-gradient(85deg, #ef9f5e 0%, #ec7c49 100%)
+          0% 0% no-repeat padding-box;
+        border: solid 1px transparent;
+        border-radius: 50rem;
+        font-family: "proxima-nova" !important;
+        font-weight: 600;
+        max-width: 11rem;
+        margin: auto !important;
+        margin-right: 0 !important;
+
+        // padding: 0.5rem 1.5rem;
+        @media screen and (max-width: 1030px) {
+          width: 100%;
+          white-space: nowrap;
+          padding: 0.5rem 1.5rem;
+          font-size: 1rem;
+          max-width: 14.5rem;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          border: solid 1px #ec7c49;
+          background: transparent;
+          color: #ec7c49 !important;
+        }
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 2rem;
+        justify-content: space-between;
+        background: #346a8c26;
+        border-radius: 0.8rem;
+        margin-bottom: 0rem;
+        background: #346a8c14;
+
+        background: #f7f7901a;
+        border: 0.1rem solid #ede812;
+        @media screen and (max-width: 520px) {
+          padding: 1rem;
+        }
+        li {
+          width: calc(50% - 1rem);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:nth-child(even) {
+            justify-content: flex-end;
+          }
+
+          &:last-child {
+            @media screen and (max-width: 425px) {
+              width: 100%;
+            }
+          }
+
+          .theme-btn {
+            color: #fff;
+            display: block;
+            margin: 0 !important;
+            padding: 0.5rem 1.4rem;
+            transition: 0.3s;
+            position: relative;
+            text-transform: capitalize;
+            font-size: 1rem;
+            background: transparent
+              linear-gradient(85deg, #ef9f5e 0%, #ec7c49 100%) 0% 0% no-repeat
+              padding-box;
+            border: solid 1px transparent;
+            border-radius: 50rem;
+            font-family: "proxima-nova" !important;
+            font-weight: 600;
+            max-width: 11rem;
+            margin: auto !important;
+            margin-right: 0 !important;
+
+            @media screen and (max-width: 1030px) {
+              width: 100%;
+              white-space: nowrap;
+              font-size: 1rem;
+            }
+            // @media screen and (max-width: 580px) {
+            //   max-width: 11.5rem;
+            // }
+            &:hover,
+            &:focus,
+            &:active {
+              border: solid 1px #ec7c49;
+              background: transparent;
+              color: #ec7c49 !important;
+            }
+
+            &:disabled {
+              background: #ffffff40;
+              color: #ffffff40 !important;
+              &:hover,
+              &:focus,
+              &:active {
+                border: solid 1px #ffffff40;
+                background: #ffffff40;
+                color: #ffffff40 !important;
+              }
+            }
+          }
+
+          .pack-price {
+            position: relative;
+            color: #ffeb00;
+            font-weight: 600;
+            font-size: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0;
+            line-height: 1.1;
+            @media screen and (max-width: 580px) {
+              font-size: 2rem;
+            }
+            s {
+              font-size: 60%;
+              font-weight: 400;
+              margin-right: 0.5rem;
+            }
+          }
+          .pack-count {
+            position: relative;
+            font-size: 2.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: flex-end;
+            line-height: 1;
+            margin: 0;
+            @media screen and (max-width: 580px) {
+              font-size: 2rem;
+            }
+            span.value {
+              display: flex;
+              align-items: baseline;
+              gap: 0.5rem;
+              font-weight: 600;
+              color: #ffffff;
+              font-size: 2.5rem;
+              i {
+                font-size: 1.4rem;
+                color: #8d8b8b;
+              }
+            }
+            span.title {
+              display: flex;
+              font-size: 1rem;
+              font-weight: 500;
+              color: #8d8b8b;
+            }
+          }
+          .pack-count-title {
+            color: #8e8e8e;
+            text-align: right;
+            font-weight: 500;
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+    img.content-img {
+      height: auto;
+      width: auto;
+      max-width: 26rem;
+      border-radius: 1rem;
+      display: flex;
+      align-self: flex-start;
+      cursor: pointer;
+
+      @media screen and (max-width: 991px) {
+        max-width: 24rem;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 580px) {
+        max-width: 16rem;
+        position: relative;
+        display: table;
+        margin-left: auto;
+      }
+    }
+    img.alert-img {
+      height: auto;
+      width: auto;
+      max-width: 10rem;
+      position: absolute;
+      top: -7rem;
+      left: 1rem;
+      animation: zoom-in-zoom-out 1s ease infinite;
+    }
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0.8;
+  }
+}

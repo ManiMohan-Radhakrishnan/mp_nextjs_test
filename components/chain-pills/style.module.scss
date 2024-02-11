@@ -1,0 +1,125 @@
+@import "../../styles/common";
+
+.chain-pills {
+  background-color: #ffffff;
+  padding: 0 1.5rem 0 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  .first {
+    font-family: $proxima-nova;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+    .second {
+      font-size: 1rem;
+      font-family: $proxima-nova;
+      font-weight: 700;
+      padding: 0.6rem 1rem;
+      background-color: #ffffff;
+      margin-right: 0.7rem;
+      border-bottom: none !important;
+      border-left: none !important;
+      border-top: none !important;
+    }
+  }
+
+  &.one-pill {
+    padding: 0.6rem 1.5rem !important;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.chain-pills {
+  background-color: transparent;
+  padding: 0 1.5rem 0 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: none !important;
+  padding-left: 3.5rem !important;
+  position: relative;
+  &.one-pill {
+    padding-left: 3.5rem !important;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: linear-gradient(120deg, #eba065, #8a8aa1, #ef9d5d);
+    background: linear-gradient(120deg, #ec7c48, #ef9d5d);
+    border-radius: 50rem;
+    background-image: url(https://cdn.guardianlink.io/product-hotspot/images/Path_10711.png);
+    background-position: center;
+    background-size: contain;
+    opacity: 0.7;
+    transform: rotate(45deg);
+  }
+  .first {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    a {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .second {
+      font-family: $proxima-nova;
+      font-weight: 400;
+      padding: 0 !important;
+      font-size: 0.85rem;
+      // color: #ec7c48;
+      color: #ef9d5d;
+      text-transform: uppercase;
+      background-color: transparent;
+    }
+  }
+  &.property-pill-box {
+    // background-color: #10241b;
+    padding: 1rem 1.5rem !important;
+    background-color: #19362961;
+    border-radius: 0.5rem !important;
+    border: 0.1rem solid #193629 !important;
+
+    &::before {
+      content: unset !important;
+    }
+    .first {
+      .pill-title {
+        font-size: 1.2rem;
+      }
+      .pill-description {
+        padding: 0 !important;
+        font-size: 1rem;
+        color: #a2a2a2;
+        font-family: $proxima-nova;
+        font-weight: 400;
+      }
+      .second {
+        text-transform: uppercase;
+        // background: -webkit-linear-gradient(
+        //   -91deg,
+        //   #e2ff00 50%,
+        //   #18e0e0 7%,
+        //   #e8318d 70%
+        // );
+        background: linear-gradient(92deg, #5d0e4e 0%, #722807 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+.chain-pills:first-child .first {
+  text-transform: none !important;
+}

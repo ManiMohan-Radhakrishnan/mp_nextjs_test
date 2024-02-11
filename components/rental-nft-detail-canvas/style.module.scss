@@ -1,0 +1,15 @@
+.rental-detail-canvas {
+  background-color: #1d1c2c;
+  max-width: 40rem !important;
+  width: 100% !important;
+  @media screen and (max-width: 1024px) {
+    max-width: 34rem !important;
+  }
+  &-header {
+    justify-content: flex-end;
+    button.btn-close {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

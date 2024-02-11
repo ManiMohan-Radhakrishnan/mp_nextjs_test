@@ -1,0 +1,28 @@
+@import "../../styles/common";
+
+.bid-history {
+  &.listofHistory {
+    .bid-history-content {
+      min-height: auto !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .bid-winner {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 3rem 3rem 2rem 3rem;
+    min-height: calc(100vh - 16rem) !important;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bid-owner {
+    span {
+      display: flex;
+    }
+  }
+}

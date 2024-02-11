@@ -1,0 +1,492 @@
+@import "../../styles/common";
+
+.nft-list-items {
+  &.nft-list-row-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    // align-items: flex-start;
+    &:hover {
+      background-color: #000;
+      .nft-list-col-box {
+        background-color: #000;
+      }
+    }
+    &:nth-child(even) {
+      background-color: #1d1c2c;
+      &:hover {
+        background-color: #000;
+        .nft-list-col-box {
+          background-color: #000;
+        }
+      }
+      .nft-list-col-box {
+        background-color: #1d1c2c;
+      }
+    }
+    &:nth-child(odd) {
+      background-color: #282739;
+      &:hover {
+        background-color: #000;
+        .nft-list-col-box {
+          background-color: #000;
+        }
+      }
+      .nft-list-col-box {
+        background-color: #282739;
+      }
+    }
+    .nft-list-col-box {
+      padding: 1rem 0.4rem;
+      word-break: break-word;
+      > a {
+        color: #ffffff;
+        display: block;
+        height: 100%;
+        width: 100%;
+        &.nft-info {
+          display: flex;
+        }
+      }
+      &:nth-child(1) {
+        max-width: 3rem;
+        min-width: 3rem;
+        text-align: center;
+        display: none;
+      }
+      &:nth-child(2) {
+        max-width: 18rem;
+        min-width: 18rem;
+      }
+      // &:nth-child(3) {
+      //   max-width: 14rem;
+      //   min-width: 14rem;
+      // }
+
+      &:nth-child(3) {
+        max-width: 11rem;
+        min-width: 11rem;
+      }
+      &:nth-child(4) {
+        max-width: 10rem;
+        min-width: 10rem;
+      }
+      &:nth-child(5) {
+        max-width: 10rem;
+        min-width: 10rem;
+      }
+      &:nth-child(6) {
+        max-width: 11rem;
+        min-width: 11rem;
+      }
+      &:nth-child(7) {
+        max-width: 4rem;
+        min-width: 4rem;
+        position: sticky;
+        right: -1rem;
+        z-index: 1;
+        text-align: center;
+      }
+    }
+
+    .nft-list-col-box {
+      .nft-img {
+        max-height: 4.5rem;
+        max-width: 4.5rem;
+        height: 100%;
+        width: 100%;
+      }
+      .more-nft-title {
+        .more-nft-name {
+          font-size: 1.15rem;
+          line-height: 1.3 !important;
+          display: block;
+        }
+        .nft-type-badge {
+          color: #95ff8d;
+          font-size: 0.7rem;
+          border-radius: 0.3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 1.2rem;
+          max-width: 3rem;
+          min-width: 3rem;
+          padding: 0;
+          box-shadow: none;
+          z-index: 2;
+          background: transparent;
+          border: 0.05rem solid #95ff8d;
+          font-family: "proxima-nova" !important;
+          font-weight: 600;
+        }
+        .nft-signature {
+          font-size: 0.9rem;
+          color: #f58220;
+          font-weight: 400;
+        }
+      }
+
+      .player_stats {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .player-type {
+          height: 2rem;
+          width: 2rem;
+          padding: 0.2rem;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .player-level {
+          padding: 0.2rem;
+          text-align: center;
+          h6 {
+            font-size: 1rem;
+            margin: 0;
+          }
+          img {
+            height: 1.8rem;
+            width: 1.8rem;
+            object-fit: contain;
+          }
+        }
+        .player-range {
+          &.yearshow {
+            .band {
+              --bs-text-opacity: 1;
+              color: rgba(
+                var(--bs-secondary-rgb),
+                var(--bs-text-opacity)
+              ) !important;
+            }
+            .year {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .cart_box {
+        cursor: pointer;
+
+        .cart_text {
+          font-size: 0.9rem;
+          svg {
+            font-size: 1.2rem;
+            margin-right: 0.2rem;
+          }
+        }
+        &.add_cart {
+          color: #f58220;
+        }
+      }
+    }
+  }
+  &.mini-list {
+    .nft-list-col-box {
+      padding: 1rem 0.4rem;
+      word-break: break-word;
+      &:nth-child(1) {
+        max-width: 3rem;
+        min-width: 3rem;
+        text-align: center;
+      }
+      // &:nth-child(2) {
+      //   max-width: 3rem;
+      //   min-width: 3rem;
+      // }
+    }
+    .nft-list-col-box {
+      .nft-img {
+        max-height: 3rem;
+        max-width: 3rem;
+        height: 100%;
+        width: 100%;
+        margin-right: 0.5rem;
+      }
+      .more-nft-title {
+        .more-nft-name {
+          font-size: 1.1rem;
+          line-height: 1.3 !important;
+          display: block;
+        }
+        .nft-type-badge {
+          color: #95ff8d;
+          font-size: 0.7rem;
+          border-radius: 0.3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 1.2rem;
+          max-width: 3rem;
+          min-width: 3rem;
+          padding: 0;
+          box-shadow: none;
+          z-index: 2;
+          background: transparent;
+          border: 0.05rem solid #95ff8d;
+          font-family: "proxima-nova" !important;
+          font-weight: 600;
+        }
+        .nft-signature {
+          font-size: 0.7rem;
+          color: #f58220;
+          font-weight: 400;
+        }
+        .bundle-badge {
+          color: #ffffff;
+          font-size: 0.8rem;
+          background: #de6f01;
+          padding: 0.1rem 0.5rem;
+          display: table;
+          margin: 0;
+          border-radius: 0.2rem;
+        }
+      }
+      // .rank-title {
+      //   font-size: 1rem;
+      // }
+      // .player-range {
+      //   .band {
+      //     font-size: 1rem;
+      //   }
+      // }
+      // .player_stats {
+      //   display: flex;
+      //   align-items: flex-start;
+      //   justify-content: space-between;
+      //   .player-type {
+      //     height: 1.8rem;
+      //     width: 1.8rem;
+      //     padding: 0.2rem;
+      //     img {
+      //       width: 100%;
+      //       height: 100%;
+      //       object-fit: contain;
+      //     }
+      //   }
+      //   .player-level {
+      //     padding: 0.2rem;
+      //     text-align: center;
+      //     h6 {
+      //       font-size: 0.8rem;
+      //       margin: 0;
+      //     }
+      //     img {
+      //       height: 1.5rem;
+      //       width: 1.5rem;
+      //       object-fit: contain;
+      //     }
+      //   }
+      //   .player-range {
+      //     .band {
+      //       font-size: 0.9rem;
+      //     }
+      //     &.yearshow {
+      //       .band {
+      //         --bs-text-opacity: 1;
+      //         color: rgba(
+      //           var(--bs-secondary-rgb),
+      //           var(--bs-text-opacity)
+      //         ) !important;
+      //         font-size: 0.8rem;
+      //       }
+      //       .year {
+      //         margin: 0;
+      //         font-size: 0.85rem;
+      //       }
+      //     }
+      //   }
+      // }
+      .more-nft-ownername-info {
+        .more-nft-desc {
+          font-size: 1rem;
+          &.owner-name {
+            cursor: pointer;
+          }
+        }
+      }
+      .more-bid-details {
+        font-size: 1rem;
+        .mb-title {
+          font-size: 1rem;
+        }
+      }
+      // .time-counter-box {
+      //   display: flex;
+      //   align-items: flex-start;
+      //   justify-content: center;
+      //   flex-direction: column;
+      //   position: relative;
+      //   z-index: 1;
+      //   color: #fff;
+      //   padding: 0.2rem 0.3rem;
+      //   background: #7e0000;
+      //   border: 0.1rem solid #ff5858;
+      //   border-radius: 0.4rem;
+      //   .time-counter-card {
+      //     font-size: 0.9rem;
+      //     // display: flex;
+      //   }
+      // }
+      .time-counter-box {
+        // position: absolute;
+        // left: 1rem;
+        // right: initial;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: none;
+        border-radius: 0.4rem;
+        color: #fff;
+        // top: -5.7rem;
+        flex-direction: row;
+        // background: #8e1d15;
+        z-index: 1;
+        .time-counter-card {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          position: relative;
+          z-index: 1;
+          color: #fff;
+          padding: 0rem 1rem;
+          background: #8e1d15;
+          border: 0.1rem solid #ff5858;
+          border-radius: 0.4rem;
+          &.startsin {
+            background: #1f6a19;
+            border: 0.1rem solid #55b14e;
+            .time-title {
+              background: #0f2f0c;
+              border: 0.05rem solid #55b14e;
+            }
+          }
+          span.fire-icon {
+            color: #ff7600;
+            font-size: 1.2rem;
+            animation: blinker 1s linear infinite;
+          }
+          .time-title {
+            display: none;
+            line-height: 1;
+            font-size: 0.9rem;
+            position: absolute;
+            top: calc(100% - 0.5rem);
+            right: 0.5rem;
+            background: #6b1f1a;
+            padding: 0.2rem 0.8rem;
+            border-radius: 0.3rem;
+            border: 0.05rem solid #ff5858;
+          }
+        }
+        img {
+          height: 2rem;
+          margin: 0;
+          width: auto !important;
+          min-width: unset !important;
+          margin-right: 0.5rem;
+        }
+      }
+      .cart_box {
+        cursor: pointer;
+
+        .cart_text {
+          font-size: 0.9rem;
+          svg {
+            font-size: 1rem;
+            margin-right: 0.2rem;
+          }
+        }
+        &.add_cart {
+          color: #f58220;
+        }
+      }
+    }
+  }
+  &.large-list {
+    .nft-list-col-box {
+      .time-counter-box {
+        // position: absolute;
+        // left: 1rem;
+        // right: initial;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: none;
+        border-radius: 0.4rem;
+        color: #fff;
+        // top: -5.7rem;
+        flex-direction: row;
+        // background: #8e1d15;
+        z-index: 1;
+        .time-counter-card {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          position: relative;
+          z-index: 1;
+          color: #fff;
+          padding: 0rem 1rem;
+          background: #8e1d15;
+          border: 0.1rem solid #ff5858;
+          border-radius: 0.4rem;
+          &.startsin {
+            background: #1f6a19;
+            border: 0.1rem solid #55b14e;
+            .time-title {
+              background: #0f2f0c;
+              border: 0.05rem solid #55b14e;
+            }
+          }
+          span.fire-icon {
+            color: #ff7600;
+            font-size: 1.2rem;
+            animation: blinker 1s linear infinite;
+          }
+          .time-title {
+            display: none;
+            line-height: 1;
+            font-size: 0.9rem;
+            position: absolute;
+            top: calc(100% - 0.5rem);
+            right: 0.5rem;
+            background: #6b1f1a;
+            padding: 0.2rem 0.8rem;
+            border-radius: 0.3rem;
+            border: 0.05rem solid #ff5858;
+          }
+        }
+        img {
+          height: 2rem;
+          margin: 0;
+          width: auto !important;
+          min-width: unset !important;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.auction-timer {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 0rem 1rem;
+  background: #8e1d15;
+  border: 0.1rem solid #ff5858;
+  border-radius: 0.4rem;
+  font-size: 0.85rem;
+}

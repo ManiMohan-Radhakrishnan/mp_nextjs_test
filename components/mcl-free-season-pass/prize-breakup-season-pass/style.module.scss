@@ -1,0 +1,106 @@
+@import "../../../styles/common";
+
+.prize-breakup-section {
+  width: 100%;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("https://cdn.guardianlink.io/product-hotspot/images/PlayPass-prize-breakdown-bg.jpg")
+    no-repeat;
+  background-position: bottom;
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    // background: #07092f;
+    // background: linear-gradient(181deg, #7332b2, #07092f);
+    // background: linear-gradient(181deg, #490f508f, #490f50);
+    background: linear-gradient(181deg, #7d34ad5e, #201a97bf);
+    background: linear-gradient(181deg, #2e00295e, #9003405e, #680137bf);
+  }
+  &-title {
+    font-family: $nunito-sans;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    span {
+      color: #ffdd98;
+    }
+  }
+  table {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+    max-width: 40rem;
+    border-radius: 2rem;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: -4px -1px 40px 0px #a604fb80;
+    font-size: 1.5rem;
+
+    font-size: 1.5rem;
+    -webkit-animation: tableBoxshadow 4s infinite; /* Chrome, Safari, Opera */
+    animation: tableBoxshadow 4s infinite;
+    thead {
+      background: linear-gradient(300deg, #2e0029, #900340, #680137);
+      th {
+        padding: 1rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        color: #fee5ff;
+      }
+    }
+    tbody {
+      tr {
+        background: #000000d6;
+        border-bottom: 1px solid #9504f942;
+        &:last-child {
+          border-bottom: none;
+        }
+        td {
+          font-size: 1.35rem;
+          padding: 1rem;
+          text-align: center;
+          color: #ffffffbd;
+          strong {
+            font-size: 1.8rem;
+            font-size: 2rem;
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    z-index: 100;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes tableBoxshadow {
+  50% {
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #900340, -0.2rem -0.2rem 0.5rem 0 #680137;
+  }
+}
+/* Standard syntax */
+@keyframes tableBoxshadow {
+  50% {
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #900340, -0.2rem -0.2rem 0.5rem 0 #680137;
+  }
+}

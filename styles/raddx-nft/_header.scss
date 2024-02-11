@@ -1,0 +1,37 @@
+.raddx-header {
+  &.navbar-dark .navbar-nav .nav-link {
+    &.theme-btn {
+      color: #fff;
+      display: block;
+      margin: 0 0.3rem 0;
+      padding: 0.5rem 1.5rem;
+      transition: 0.3s;
+      position: relative;
+      text-transform: capitalize;
+      font-size: 1rem;
+      background: #ea337f;
+      border: solid 1px transparent;
+      border-radius: 0.5rem;
+      font-family: "proxima-nova" !important;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.2rem;
+      &:hover,
+      &:focus,
+      &:active {
+        border: solid 1px #ea337f !important;
+        background: transparent;
+        color: #ea337f !important;
+      }
+      &#drop_outer {
+        &:hover,
+        &:focus,
+        &:active {
+          border: solid 1px #ea337f !important;
+          background: transparent;
+          color: #ea337f !important;
+        }
+      }
+    }
+  }
+}

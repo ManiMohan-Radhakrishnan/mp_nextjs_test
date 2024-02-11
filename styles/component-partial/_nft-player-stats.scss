@@ -1,0 +1,49 @@
+.nft-tags {
+  .nft-tag-title {
+    font-size: 1.5rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    position: relative;
+
+    .title-count {
+      font-size: 1rem;
+      font-family: $proxima-nova;
+      font-weight: 700;
+      top: 0;
+      width: 0;
+      position: absolute;
+      margin-left: 0.2rem;
+    }
+  }
+
+  .nft-tag-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag {
+      padding: 0.5rem 1.5rem;
+      font-family: $proxima-nova;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.player {
+  font-size: 1.2rem;
+  font-family: $proxima-nova;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-right: 0.5rem;
+  color: #ecececcc;
+}

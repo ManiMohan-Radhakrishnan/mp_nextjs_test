@@ -1,0 +1,1089 @@
+section.detail-page-content {
+  padding-top: 0;
+  background: #1d1c2c;
+  color: #fff;
+
+  img {
+    user-select: none !important;
+  }
+
+  .bid_section_wrapper {
+    padding-top: 1.5rem;
+    background: #1d1c2c;
+    .player_stats {
+      position: absolute;
+      top: 3rem;
+      right: 0;
+      z-index: 4;
+      border: 0.1rem solid #fff;
+      border-radius: 0.5rem 0 0 0.5rem;
+      background: #000000 0% 0% no-repeat padding-box;
+      border: 0.18rem solid #3b3b3b;
+
+      &.blue_color {
+        border: 0.1rem solid #3b56ff;
+        .player-type,
+        .player-range {
+          border-bottom: 0.1rem solid #3b56ff;
+        }
+        .band {
+          background: #3b56ff;
+        }
+      }
+      &.orange_color {
+        border: 0.1rem solid #f58220;
+        .player-type,
+        .player-range {
+          border-bottom: 0.1rem solid #f58220;
+        }
+        .band {
+          background: #f58220;
+        }
+      }
+      &.purple_color {
+        border: 0.1rem solid #9e6cef;
+        .player-type,
+        .player-range {
+          border-bottom: 0.1rem solid #9e6cef;
+        }
+        .band {
+          background: #9e6cef;
+        }
+      }
+      &.lavender_color {
+        border: 0.1rem solid #803cef;
+        .player-type,
+        .player-range {
+          border-bottom: 0.1rem solid #803cef;
+        }
+        .band {
+          background: #803cef;
+        }
+      }
+      &.gold_color {
+        border: 0.1rem solid #cebd48;
+        .player-type,
+        .player-range {
+          border-bottom: 0.1rem solid #cebd48;
+        }
+        .band {
+          background: #cebd48;
+        }
+      }
+      &.multi_color {
+        border: 0.1rem solid #18e0e0;
+        &:before {
+          content: "";
+          position: absolute;
+          top: -0.1rem;
+          bottom: -0.1rem;
+          left: -0.1rem;
+          background: linear-gradient(202deg, #e2ff00, #18e0e0, #e8318d);
+          right: 0;
+          z-index: -1;
+          border-radius: 0.5rem 0 0 0.5rem;
+        }
+        .player-type,
+        .player-range {
+          border-bottom: 0.1rem solid #18e0e0;
+          background-color: #000;
+        }
+        .player-type {
+          border-radius: 0.5rem 0 0 0rem;
+        }
+        .player-level {
+          border-radius: 0rem 0 0 0.5rem;
+          background-color: #000;
+        }
+        .band {
+          background: linear-gradient(
+            123deg,
+            #e2ff00,
+            #6cf0b3,
+            #18e0e0,
+            #1e2b80
+          );
+        }
+      }
+      .player-type {
+        padding: 0.6rem 0.4rem;
+        border-bottom: 0.1rem solid #fff;
+        img {
+          display: flex;
+          max-width: 2.5rem;
+          max-height: unset !important;
+          object-fit: contain;
+          object-position: center;
+          padding: 0.1rem;
+          width: 100%;
+          margin-top: 0.5rem;
+        }
+        h6 {
+          font-size: 0.9rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.08rem;
+
+          margin-bottom: 0;
+        }
+      }
+      .bat-type-2x {
+        padding: 0.6rem 0.4rem;
+        border-bottom: 0.1rem solid #fff;
+        img {
+          display: flex;
+          max-width: 5rem;
+          max-height: unset !important;
+          object-fit: contain;
+          object-position: center;
+          padding: 0.1rem;
+          width: 100%;
+          margin-top: 0.5rem;
+        }
+        h6 {
+          font-size: 0.9rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.08rem;
+
+          margin-bottom: 0;
+        }
+      }
+      .player-range {
+        padding: 0.6rem 0.4rem;
+        border-bottom: 0.1rem solid #3b3b3b;
+        .band {
+          font-size: 1rem;
+          padding: 0.1rem 0rem;
+          margin-bottom: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          letter-spacing: 0.08rem;
+          line-height: 1.3;
+          background: transparent;
+        }
+        h6 {
+          font-size: 0.9rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.08rem;
+          margin-bottom: 0;
+        }
+      }
+      .player-level {
+        padding: 0.6rem 0.4rem;
+        img {
+          display: flex;
+          max-width: 3rem;
+          max-height: unset !important;
+          object-fit: contain;
+          object-position: center;
+          padding: 0.2rem;
+          width: 100%;
+          margin-bottom: 0;
+        }
+        h6 {
+          font-size: 1rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.08rem;
+
+          margin-bottom: 0;
+        }
+      }
+    }
+    section.nft-img-block {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 520px) {
+        display: block;
+        .media_audio {
+          min-height: auto;
+          width: 100%;
+        }
+        .media-lsf.purple_color {
+          display: flex;
+          justify-content: flex-end;
+          justify-content: flex-end;
+          margin: 1rem auto;
+          // .svg_size {
+          //   margin-left: 0.5rem;
+          // }
+        }
+      }
+    }
+
+    .creator {
+      font-size: 1.2rem;
+      font-family: $proxima-nova;
+      font-weight: 400;
+      color: #ecececcc;
+      .nft-type-band {
+        display: inline-flex;
+        background-color: #797979;
+        color: #fff;
+        border-radius: 50rem;
+        padding: 0.1rem 0.8rem;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        &.blue_color {
+          background: #3b56ff;
+        }
+        &.orange_color {
+          background: #f58220;
+        }
+        &.purple_color {
+          background: #9e6cef;
+        }
+        &.lavender_color {
+          background: #803cef;
+        }
+        &.gold_color {
+          background: #cebd48;
+        }
+        &.multi_color {
+          background: linear-gradient(
+            123deg,
+            #e2ff00,
+            #6cf0b3,
+            #18e0e0,
+            #1e2b80
+          );
+        }
+      }
+    }
+    .nft-title-container {
+      .nft-title {
+        font-size: 1.8rem;
+        font-family: $proxima-nova;
+        font-weight: 700;
+      }
+    }
+    .nft-media.media_audio {
+      width: 90%;
+
+      &.blue_color {
+        background: #3b56ff !important;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          right: 3px;
+          bottom: 3px;
+          background: #000;
+          background: #1d1c2c;
+          z-index: 0;
+          box-shadow: inset 0px 0px 30px #3b56ff !important;
+        }
+      }
+      &.orange_color {
+        background: #f58220 !important;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          right: 3px;
+          bottom: 3px;
+          background: #000;
+          background: #1d1c2c;
+          z-index: 0;
+          box-shadow: inset 0px 0px 30px #f58220 !important;
+        }
+      }
+
+      &.purple_color {
+        background: #9e6cef !important;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          right: 3px;
+          bottom: 3px;
+          background: #000;
+          background: #1d1c2c;
+          z-index: 0;
+          box-shadow: inset 0px 0px 30px #9e6cef !important;
+        }
+      }
+      &.lavender_color {
+        background: #803cef !important;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          right: 3px;
+          bottom: 3px;
+          background: #000;
+          background: #1d1c2c;
+          z-index: 0;
+          box-shadow: inset 0px 0px 30px #803cef !important;
+        }
+      }
+      &.gold_color {
+        background: #cebd48 !important;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          right: 3px;
+          bottom: 3px;
+          background: #000;
+          background: #1d1c2c;
+          z-index: 0;
+          box-shadow: inset 0px 0px 30px #cebd48 !important;
+        }
+      }
+      &.multi_color {
+        background: linear-gradient(
+          123deg,
+          #e2ff00,
+          #6cf0b3,
+          #18e0e0,
+          #1e2b80
+        ) !important;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          right: 3px;
+          bottom: 3px;
+          background: #000;
+          background: #1d1c2c;
+          z-index: 0;
+          box-shadow: inset 0px 0px 30px #18e0e0 !important;
+        }
+      }
+
+      img {
+        z-index: 2;
+      }
+    }
+    .media-lsf {
+      .svg_size {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border: 0.1rem solid #fff;
+        color: #fff !important;
+        margin-bottom: 0.5rem;
+        border-radius: 50rem;
+        cursor: pointer;
+        background-size: 1.4rem;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &.heart_icon {
+          border: 0.1rem solid #e8318d;
+          box-shadow: inset 0px 0px 20px #e8318d !important;
+          background-image: url("https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/heart_ico.png");
+        }
+        &.filled_heart_icon {
+          border: 0.1rem solid #e8318d;
+          box-shadow: inset 0px 0px 20px #e8318d !important;
+          background-image: url("https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/heart-filled.png");
+        }
+        &.share_icon {
+          background-image: url("https://cdn.guardianlink.io/product-hotspot/images/share_ico.png");
+        }
+        &.extend_icon {
+          background-image: url("https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/expand_ico.png");
+        }
+        &.certificate_icon {
+          background-image: url("https://cdn.guardianlink.io/product-hotspot/images/jump/jump-trade/diploma.png");
+        }
+      }
+
+      &.blue_color {
+        .svg_size.share_icon,
+        .svg_size.extend_icon,
+        .svg_size.certificate_icon {
+          border: 0.1rem solid #3b56ff;
+          box-shadow: inset 0px 0px 20px #3b56ff !important;
+        }
+      }
+      &.orange_color {
+        .svg_size.share_icon,
+        .svg_size.extend_icon,
+        .svg_size.certificate_icon {
+          border: 0.1rem solid #f58220;
+          box-shadow: inset 0px 0px 20px #f58220 !important;
+        }
+      }
+      &.purple_color {
+        .svg_size.share_icon,
+        .svg_size.extend_icon,
+        .svg_size.certificate_icon {
+          border: 0.1rem solid #9e6cef;
+          box-shadow: inset 0px 0px 20px #9e6cef !important;
+        }
+      }
+      &.lavender_color {
+        .svg_size.share_icon,
+        .svg_size.extend_icon,
+        .svg_size.certificate_icon {
+          border: 0.1rem solid #803cef;
+          box-shadow: inset 0px 0px 20px #803cef !important;
+        }
+      }
+      &.gold_color {
+        .svg_size.share_icon,
+        .svg_size.extend_icon,
+        .svg_size.certificate_icon {
+          border: 0.1rem solid #cebd48;
+          box-shadow: inset 0px 0px 20px #cebd48 !important;
+        }
+      }
+      &.multi_color {
+        .svg_size.share_icon,
+        .svg_size.extend_icon,
+        .svg_size.certificate_icon {
+          position: relative;
+          border: 0.1rem solid #18e0e0;
+          box-shadow: inset 0px 0px 20px #18e0e0 !important;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -0.1rem;
+            bottom: -0.1rem;
+            left: -0.1rem;
+            // background: linear-gradient(202deg, #e2ff00, #18e0e0, #e8318d);
+            right: 0;
+            z-index: -1;
+          }
+        }
+      }
+    }
+    .nft-desc {
+      font-size: 1.2rem;
+      span {
+        color: #fff;
+        font-family: $proxima-nova;
+        font-weight: 400;
+        color: #ecececcc;
+      }
+      p {
+        color: #fff;
+        font-family: $proxima-nova;
+        font-weight: 400;
+        color: #ecececcc;
+      }
+    }
+    .current-bid {
+      &.ownerName {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        .title {
+          margin-right: 0.5rem;
+          margin-bottom: 0rem;
+          font-family: $proxima-nova;
+          font-weight: 400;
+          color: #c2c2c2cc;
+        }
+        .value .user-detail {
+          display: flex;
+          align-items: center;
+          margin-top: 0.8rem;
+          margin: 0;
+        }
+      }
+    }
+
+    .price-block {
+      display: flex;
+      padding: 2rem 0.5rem;
+      border-top: 0.1rem dashed #ffffff33;
+      border-bottom: 0.1rem dashed #ffffff33;
+      .price-box {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          padding: 0 1rem;
+          border-right: 0.1rem solid #ffffff33;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            border: none;
+          }
+          h5,
+          h4 {
+            font-weight: 400;
+            color: #ffffffb3;
+          }
+          h4 {
+            margin: 0;
+            font-weight: 600;
+            &.price-value {
+              color: #fdf100;
+            }
+            .edition-value {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-content {
+      .custom-divider {
+        height: 1px !important;
+        background-color: #363641;
+        opacity: 1;
+        margin: 0.5rem 0 1rem 0;
+        border: none;
+      }
+      .current-bid {
+        @media screen and (max-width: 425px) {
+          border-bottom: 1px solid #363641;
+        }
+
+        .title {
+          font-size: 1rem;
+          margin-bottom: 0;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #c2c2c2cc;
+          .status-tag {
+            margin-left: 0.3rem;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.4rem;
+            border: 1px solid #f21e00;
+            color: #f21e00;
+            position: absolute;
+          }
+        }
+        .end-date {
+          font-size: 1.4rem;
+        }
+        .value {
+          .crypto {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: flex-end;
+            .edition {
+              font-size: 1.4rem;
+              margin: 0 0.5rem 0;
+            }
+          }
+          .user-detail {
+            margin-top: 0.2rem;
+            img {
+              height: 1.5rem;
+              width: 1.5rem;
+            }
+            .win-user-name {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+
+      .place-bid-btn {
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        font-size: 1.2rem;
+        background: transparent
+          linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0% 0% no-repeat
+          padding-box !important;
+        border: solid 1px transparent;
+        color: #fff !important;
+        span {
+          color: #fff !important;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          border: solid 1px #ec7c49 !important;
+          background: transparent !important;
+          color: #ec7c49 !important;
+        }
+        @media screen and (max-width: 520px) {
+          margin: 1rem auto 0.5rem !important;
+        }
+      }
+    }
+
+    .bottom-content {
+      .current-bid.ownerName {
+        display: flex;
+        align-items: center;
+        .title {
+          margin-right: 0.5rem;
+          font-family: $proxima-nova;
+          font-weight: 400;
+          color: #c2c2c2cc;
+        }
+      }
+
+      .bottom-content-box {
+        padding: 1.5rem;
+        border: 0.1rem solid #363641;
+        border-radius: 0.5rem;
+        margin: 0.5rem 0;
+        &.raddx {
+          border: none;
+        }
+        .current-bid {
+          padding: 2rem 1rem;
+          .title {
+            font-family: $proxima-nova;
+            font-weight: 400;
+            color: #c2c2c2cc;
+            font-size: 1.1rem;
+          }
+          .value {
+            .crypto {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    // .sub-header-nft .sub-place-bid-btn {
+    //   font-size: 0.8rem;
+    //   padding: 0.5rem 1.5rem;
+    //   font-weight: 800;
+    //   letter-spacing: 0.1rem;
+    // }
+    // .sub-header-nft .sub-head-title .nft-head-details .sub-nft-title {
+    //   font-size: 1rem;
+    // }
+    // .sub-header-nft .sub-head-title .nft-head-details .sub-creator-title {
+    //   font-size: 0.8rem;
+    // }
+  }
+
+  .point-box {
+    .point-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 0.05rem solid #363641;
+      margin: 1.5rem 0;
+      padding: 0.5rem !important;
+      width: 20%;
+      align-items: center;
+
+      &:last-child {
+        border: none;
+      }
+      .title {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: $proxima-nova;
+
+        font-weight: 400;
+        color: #ecececcc;
+      }
+      .value {
+        font-size: 1.6rem;
+        font-family: $proxima-nova;
+        font-weight: 700;
+      }
+      @media screen and (max-width: 520px) {
+        margin: 1rem 0;
+        .value {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  .property_section_wrapper {
+    padding: 0rem 0rem 4rem;
+    background: #1d1c2c;
+    .chain-attributes {
+      border-bottom: 0.1rem dashed #363641;
+      padding-bottom: 3rem;
+    }
+    .nft-tag-title,
+    .chain-att-title {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-family: $proxima-nova;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    .nft-tag-title {
+      .title-count {
+        font-size: 1rem;
+      }
+    }
+    .chain-pills {
+      background-color: transparent;
+      padding: 0 1.5rem 0 0;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      border: none !important;
+      padding-left: 3.5rem !important;
+      position: relative;
+      &.one-pill {
+        padding-left: 3.5rem !important;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        background: linear-gradient(120deg, #eba065, #8a8aa1, #ef9d5d);
+        background: linear-gradient(120deg, #ec7c48, #ef9d5d);
+        border-radius: 50rem;
+        background-image: url(https://cdn.guardianlink.io/product-hotspot/images/Path_10711.png);
+        background-position: center;
+        background-size: contain;
+        opacity: 0.7;
+        transform: rotate(45deg);
+      }
+      .first {
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        a {
+          font-size: 1.1rem;
+          color: #fff;
+        }
+        .second {
+          font-family: $proxima-nova;
+          font-weight: 600;
+          padding: 0 !important;
+          font-size: 0.85rem;
+          // color: #ec7c48;
+          color: #ef9d5d;
+          text-transform: uppercase;
+          background-color: transparent;
+        }
+      }
+      &.property-pill-box {
+        padding: 1rem 1.5rem !important;
+        background-color: #0e0e1c3b;
+        border-radius: 0.5rem !important;
+        border: 0.1rem solid #3636418f !important;
+
+        &::before {
+          content: unset !important;
+        }
+        .first {
+          .pill-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+          .pill-description {
+            padding: 0 !important;
+            font-size: 1rem;
+            color: #ecececcc;
+            font-family: $proxima-nova;
+            font-weight: 400;
+          }
+          .second {
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #ef9d5d;
+          }
+        }
+      }
+    }
+
+    .section-title {
+      margin: 2rem 0 1rem 0;
+      font-size: 2.2rem;
+      font-family: $proxima-nova;
+      font-weight: bold;
+      border-bottom: 2px solid #363641;
+      padding-bottom: 0.5rem;
+    }
+    .nft-artist {
+      .artist-content {
+        .artist-img {
+          width: 85% !important;
+          max-height: 100%;
+          object-fit: cover;
+          display: table;
+          margin: auto;
+        }
+
+        .artist-details-content {
+          .artist-name {
+            font-size: 1.9rem;
+            font-family: $proxima-nova;
+            font-weight: 700;
+          }
+          .at-name {
+            font-size: 1.4rem;
+          }
+          .artist-desc {
+            font-size: 1.2rem;
+            font-family: $proxima-nova;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-top: 1rem !important;
+          }
+          .artist-pill-container {
+            position: sticky;
+            top: 100%;
+            .artist-pill {
+              .pill-title {
+                font-size: 1.2rem;
+                font-weight: 600;
+              }
+              .pill-value {
+                font-size: 1.5rem;
+                font-family: $proxima-nova;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bid-history {
+    position: relative;
+    background: #0e0e1c !important;
+
+    border-radius: 0.5rem;
+
+    &::before {
+      background-color: #0e0e1c !important;
+      content: "";
+      position: absolute;
+      top: 0.1rem;
+      left: 0.15rem;
+      right: 0.15rem;
+      bottom: 0.1rem;
+      z-index: 0;
+      border-radius: 0.5rem;
+    }
+    * {
+      position: relative;
+      word-break: break-word;
+    }
+    .bid-history-title-content {
+      padding: 1.2rem 1.5rem;
+      background-color: #2a2937;
+      display: flex;
+      justify-content: space-between;
+      border-left: none;
+      border-right: none;
+      .bid-history-title {
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-family: $proxima-nova;
+        font-weight: 600;
+
+        position: relative;
+      }
+    }
+    &.if_bid_empty_cell {
+      .bid-empty-content {
+        .empty-top-container {
+          height: 40vh;
+          .empty-top-content {
+            .empty-text {
+              font-size: 1.4rem;
+              font-family: $proxima-nova;
+              font-weight: 600;
+            }
+          }
+        }
+        .empty-bottom-content {
+          background-color: #e6e6e62e;
+          .publish-time {
+            font-size: 1rem;
+            color: #fff !important;
+          }
+          .nft-owner {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  .nft-counter {
+    .counter-time {
+      font-size: 1.7rem;
+      font-family: $proxima-nova;
+      font-weight: 700;
+    }
+    .counter-interval {
+      margin-left: 0.2rem;
+      font-size: 1rem;
+      font-family: $proxima-nova;
+      font-weight: 700;
+    }
+    .interval-gap {
+      margin-right: 0.6rem;
+    }
+  }
+
+  .bid-history {
+    .bid-history-content {
+      background: transparent;
+      border-top: 0.05rem solid #707070;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      // min-height: unset !important;
+      .bid-histroy-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0.8rem;
+        border-bottom: none;
+        margin: 0 0.8rem;
+        background: #191928;
+        margin-bottom: 0.3rem;
+        border-radius: 0.3rem;
+
+        .first-half {
+          .time {
+            font-size: 1rem;
+          }
+          .bid-owner {
+            font-size: 1.2rem;
+            white-space: normal;
+            display: unset;
+          }
+        }
+        .second-half {
+          .bid-value {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .history-end-content {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .bid-winner {
+    @media screen and (max-width: 768px) {
+      min-height: calc(60vh) !important;
+    }
+    .winner-user-details {
+      img {
+        margin-top: 1rem;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        object-fit: cover;
+        animation: zoom-in-zoom-out 1s ease-in infinite;
+      }
+      .winner-id {
+        font-size: 1.9rem;
+      }
+    }
+    .winner-text {
+      right: -9rem;
+      font-size: 5rem;
+
+      top: calc(50% - 2rem) !important;
+    }
+    .nft-lastbid-details {
+      margin-top: 1.5rem;
+      .lastbid-right .lastbid-date-title,
+      .lastbid-left .lastbid-title {
+        font-size: 1.2rem;
+        font-family: $proxima-nova;
+        font-weight: 600;
+      }
+      .lastbid-left .lastbid-value,
+      .lastbid-right .lastbid-date-value {
+        font-size: 1.2rem;
+      }
+    }
+    .nft-sold-details {
+      .sold-for .sold-for-value,
+      .sold-on .sold-on-value {
+        font-size: 1.2rem;
+      }
+    }
+
+    &.winnerBox {
+      .winner-user-details {
+        img {
+          margin-top: 1rem;
+          height: 5rem;
+          width: 5rem;
+          border-radius: 50%;
+          object-fit: cover;
+          animation: zoom-in-zoom-out 1s ease-in infinite;
+        }
+        .winner-id {
+          font-size: 1.4rem;
+        }
+      }
+      .winner-text {
+        right: -8rem;
+        font-size: 5rem;
+        top: calc(50% - 2rem) !important;
+      }
+      .nft-sold-details {
+        margin-top: 1rem;
+        .sold-for .sold-for-title,
+        .sold-on .sold-on-title {
+          font-size: 1.2rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+        }
+        .lastbid-right .lastbid-date-value,
+        .lastbid-left .lastbid-value {
+          font-size: 0.9rem;
+        }
+      }
+      .bidding-history-btn {
+        font-size: 1rem !important;
+        padding: 0.2rem 0.5rem;
+      }
+    }
+  }
+}
+.section-title {
+  margin: 4rem 0 3rem 0;
+  font-size: 2.5rem;
+  font-family: $proxima-nova;
+  font-weight: bold;
+  border-bottom: 2px solid #363641;
+}
+
+// NFT-Media
+@import "./component-partial/nft-media";
+@import "./component-partial/nft-base-detail";
+@import "./component-partial/nft-order-details";
+@import "./component-partial/nft-artist";
+@import "./component-partial/nft-order-summary";
+@import "./component-partial/nft-purchase-detail";
+@import "./component-partial/bid-winner";
+@import "./component-partial/bid-history";
+@import "./component-partial/owner-list";
+@import "./component-partial/nft-properties";
+@import "./component-partial/chain-attributes";
+@import "./component-partial/nft-player-stats";
+@import "./component-partial/nft-tags";
+@import "./component-partial/nft-props-pill";

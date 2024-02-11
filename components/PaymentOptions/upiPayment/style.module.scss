@@ -1,0 +1,208 @@
+@import "../../../styles/common";
+@import "../style.module.scss";
+
+.inner-card-details {
+  width: 100%;
+  margin: auto;
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
+  button.btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pay-list-back {
+    display: flex;
+    align-items: center;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .current-balance {
+    box-shadow: #00000014 0px 10px 30px;
+    border-radius: 0.7rem;
+    color: black;
+
+    .cb-title {
+      font-size: 0.8rem;
+      font-family: $proxima-nova;
+      font-weight: 600;
+    }
+
+    .cb-balance {
+      font-size: 2rem;
+      font-family: $proxima-nova;
+      font-weight: 700;
+    }
+  }
+
+  .ac-step {
+    font-size: 0.9rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+
+  .ac-cc-title {
+    font-size: 1.13rem;
+    font-family: $proxima-nova;
+    font-weight: 700;
+  }
+
+  .qr-terms {
+    font-size: 0.9rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    color: #6d0a0a;
+    margin-bottom: 0.5rem;
+  }
+
+  .wallet-address {
+    font-size: 0.8rem !important;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    font-weight: normal !important;
+    padding: 0.8rem 0.8rem;
+    width: 100%;
+    border-radius: 0.7rem;
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .success-card {
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.3rem !important;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem !important;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    svg {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .otp-input {
+    padding: 0;
+  }
+  .float-icons {
+    position: relative;
+
+    svg.eye {
+      position: absolute;
+      bottom: 1.1rem;
+      right: 1rem;
+      opacity: 0.5;
+    }
+  }
+  .popup-content-block {
+    // max-height: calc(100vh - 31rem);
+    overflow-y: auto;
+    padding: 0 2rem;
+    margin: 2rem 0 0;
+  }
+
+  .error_text {
+    margin: 0 0 0.3rem;
+    color: #f21e00 !important;
+    font-size: 0.9rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+}
+
+.scan-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000;
+  span {
+    font-weight: 400;
+    font-size: 85%;
+  }
+}
+
+.af-amount {
+  border: 1px solid black;
+  border-radius: 0.6rem;
+  padding: 0.9rem;
+  font-size: 1rem !important;
+}
+
+.flex-input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+
+  .inr-input {
+    width: 60%;
+    padding-right: 0.5rem;
+    .input-field {
+      margin-bottom: 0 !important;
+    }
+  }
+  .current-balance {
+    width: 40%;
+    box-shadow: none;
+    .cb-balance {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.8rem 1rem;
+      text-align: center;
+      background: #ededed;
+      border-radius: 0.5rem;
+      @media screen and (max-width: 991px) {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    .inr-input,
+    .current-balance {
+      width: 100%;
+    }
+    .inr-input {
+      padding-right: 0rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.amount-flex-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  // @media screen and (max-width: 480px) {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  .current-balance {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // @media screen and (max-width: 480px) {
+    //   width: 100%;
+    // }
+  }
+}
+
+.input-title {
+  font-size: 1rem;
+  user-select: none;
+}
+
+.set-modal-scroll {
+  @media screen and (max-width: 767px) {
+    height: calc(100vh - 10rem);
+    .set-modal-scroll-body {
+      height: calc(100vh - 4rem);
+      overflow-y: auto;
+      // scrollbar-width: thin;
+    }
+  }
+}

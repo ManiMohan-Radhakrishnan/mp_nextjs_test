@@ -1,0 +1,90 @@
+@import "../../styles/common";
+
+.faq-wrapper {
+  font-family: $proxima-nova;
+  font-weight: 400;
+
+  background: #1d1c2c;
+  padding: 7rem 5rem;
+  color: #fff !important;
+  @media screen and (max-width: 767px) {
+    padding: 5rem 3rem;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: $nunito-sans;
+  }
+
+  .c-tabs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .nav-tab {
+      margin: 0.3rem 0.5rem 0 0;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      background-color: #212135;
+      color: #fff;
+      transition: 0.5s;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #34324f;
+      }
+
+      &.active {
+        background-color: #faaa47;
+        color: #000;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .tab-divider {
+    border-bottom: 1.5px solid #4f4e5d;
+    margin: 1rem 0 2rem;
+  }
+}
+
+.c-accordian {
+  background: #141420;
+  font-family: $proxima-nova;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+
+  .c-accor-head {
+    display: flex;
+    align-items: center;
+    // border-bottom: 2px solid var(--ck-theme);
+    border-bottom: 2px solid #4f4e5d;
+    cursor: pointer;
+
+    .head-area {
+      flex: 1;
+      font-size: 1.1rem;
+    }
+
+    svg {
+      margin: 1rem;
+      opacity: 0.6;
+    }
+  }
+  .c-accor-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    border-bottom: 2px solid #4f4e5d;
+    color: #8c8c9e;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

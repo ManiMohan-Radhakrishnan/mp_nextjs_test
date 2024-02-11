@@ -1,0 +1,118 @@
+@import "../../../styles/common";
+
+.refer-treasurebox-section {
+  position: relative;
+  padding-top: 3rem;
+  background: #0b111f;
+  @media screen and (max-width: 540px) {
+    background: #09111e;
+  }
+  .refer-heading {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+
+    text-align: center;
+    margin: 0 auto 0;
+    @media screen and (max-width: 540px) {
+      max-width: 31rem;
+    }
+    h4 {
+      text-align: center;
+      font-family: $nunito-sans;
+      line-height: 1.3;
+      font-size: 2rem;
+      .theme-text {
+        color: #ffdd98;
+      }
+    }
+    p {
+      color: #ffffffcc;
+      @media screen and (max-width: 540px) {
+        display: none;
+      }
+    }
+  }
+
+  img.refer-treasurebox-images {
+    width: 100%;
+    height: auto;
+  }
+  .refer-treasurebox-button {
+    color: #fff;
+    display: inline-block;
+    margin: 0 0.3rem 0;
+    padding: 0.4rem 1.5rem;
+    transition: 0.3s;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: solid 0.1rem #fff;
+    border-radius: 50rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    padding: 1rem 3.5rem;
+    font-size: 1.5rem;
+    background: #de6f00;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    margin-bottom: 8%;
+    margin-bottom: 4rem;
+    width: 100%;
+    max-width: 20rem;
+    &:hover,
+    &:focus,
+    &:active {
+      border: solid 0.1rem #de6f00;
+      background: #fff;
+      color: #de6f00;
+    }
+
+    &:disabled {
+      background: #595959;
+      color: #979494;
+      border: none;
+      opacity: 0.6;
+    }
+    span {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  // .refer-treasurebox-button {
+  //   position: absolute;
+  //   right: 0;
+  //   left: 0;
+  //   margin: auto;
+  //   width: 12rem;
+  //   bottom: 0;
+  //   margin-bottom: 3%;
+
+  //   color: #fff;
+  //   transition: 0.3s;
+  //   text-transform: capitalize;
+  //   background: transparent linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0%
+  //     0% no-repeat padding-box;
+  //   border: solid 1px transparent;
+  //   border-radius: 50rem;
+  //   font-family: $proxima-nova;
+  //   font-weight: 600;
+  //   padding: 0.8rem 1.5rem;
+  //   font-size: 1.2rem;
+  //   z-index: 2;
+
+  //   &:hover,
+  //   &:focus,
+  //   &:active {
+  //     border: solid 1px #ec7c49;
+  //     background: transparent;
+  //     color: #ec7c49 !important;
+  //   }
+  // }
+}

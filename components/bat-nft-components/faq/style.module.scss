@@ -1,0 +1,74 @@
+@import "../../../styles/common";
+
+.faq-section {
+  position: relative;
+  padding: 3rem 0;
+  background: #1d1c2c;
+  .bg-faq {
+    position: absolute;
+    opacity: 0.1;
+    max-height: 35rem;
+    left: 0;
+    top: 12rem;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    width: 100%;
+    max-width: 50rem;
+    height: 100%;
+  }
+  .faq-content-section {
+    position: relative;
+    .faq-heading {
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-family: $nunito-sans;
+      line-height: 1.6;
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      span {
+        color: #ffdd98;
+      }
+    }
+    .faq-accordian-section {
+      width: 100%;
+      max-width: 60rem;
+      margin: auto;
+      .accord-content-block {
+        h2 {
+          background: #0f0e1d47;
+          font-size: 1.2rem;
+          padding: 1.3rem;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-weight: 400;
+          border-bottom: 0.1rem solid #70707033;
+          user-select: none;
+          cursor: pointer;
+          svg {
+            margin-right: 0.5rem;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            display: flex;
+            align-self: baseline;
+          }
+        }
+        .accord-collapse-block {
+          padding: 1.5rem;
+          padding-left: 3rem;
+          background: #161524;
+
+          font-weight: 400;
+          font-size: 1.1rem;
+          border-bottom: 0.1rem solid #70707033;
+          p {
+            margin: 0;
+            color: #ffffff80;
+          }
+        }
+      }
+    }
+  }
+}

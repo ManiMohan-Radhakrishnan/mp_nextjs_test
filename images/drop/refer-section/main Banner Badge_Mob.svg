@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="334.998" height="97" viewBox="0 0 334.998 97">
+  <g id="main_Banner_Badge_Mob" data-name="main Banner Badge_Mob" transform="translate(-20.002 -189)">
+    <path id="Subtraction_342" data-name="Subtraction 342" d="M-16081,369h-319a8.006,8.006,0,0,1-8-8V328.985a8.5,8.5,0,0,0,8-8.485,8.5,8.5,0,0,0-8-8.485V280a8.008,8.008,0,0,1,8-8h319a8.01,8.01,0,0,1,8,8v32.016a8.5,8.5,0,0,0-8,8.485,8.5,8.5,0,0,0,8,8.485V361A8.008,8.008,0,0,1-16081,369Z" transform="translate(16428 -82.998)" fill="#ffdd98"/>
+    <text id="Menu_Item" data-name="Menu Item" transform="translate(46 209)" font-size="26" font-family="NunitoSans-Black, Nunito Sans" font-weight="800" letter-spacing="-0.02em"><tspan x="6.254" y="26">BUY ONCE @ $1 (₹81)</tspan></text>
+    <g id="Rectangle_3772" data-name="Rectangle 3772" transform="translate(32 197)" fill="none" stroke="#000" stroke-width="2">
+      <rect width="311" height="81" stroke="none"/>
+      <rect x="1" y="1" width="309" height="79" fill="none"/>
+    </g>
+    <rect id="Rectangle_3773" data-name="Rectangle 3773" width="280" height="21" transform="translate(47 247)"/>
+    <text id="Menu_Item-2" data-name="Menu Item" transform="translate(187 262)" fill="#ffdd98" font-size="14" font-family="ProximaNova-Semibold, Proxima Nova" font-weight="600"><tspan x="-122.955" y="0">CRICKET DIGITAL COLLECTIBLE - NFTs</tspan></text>
+    <text id="Menu_Item-3" data-name="Menu Item" transform="translate(324 223)" font-size="22" font-family="NunitoSans-Black, Nunito Sans" font-weight="800" letter-spacing="0.08em"><tspan x="-5.005" y="0">*</tspan></text>
+  </g>
+</svg>

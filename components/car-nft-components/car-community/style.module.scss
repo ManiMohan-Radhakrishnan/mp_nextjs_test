@@ -1,0 +1,117 @@
+@import "../../../styles/common";
+
+.community-section {
+  background: transparent linear-gradient(89deg, #34268d 0%, #a5207c 100%) 0% 0%
+    no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: #141321;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 22rem;
+    width: 22rem;
+    background-image: url("../../../images/raddx-nft/join-comunity.svg");
+  }
+  .content-center {
+    position: relative;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto 2rem;
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: $hubolt-sans-bold-narrow;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 767px) {
+        font-size: 1.8rem;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #ebebebcc;
+      font-weight: 400;
+    }
+  }
+  .social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 580px) {
+      max-width: 20rem;
+      margin: auto;
+    }
+    // justify-content: center;
+    li {
+      height: 4rem;
+      width: 4rem;
+      margin: 0 0.5rem;
+      border: 0.1rem solid #d3ff03;
+      border-radius: 50rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 580px) {
+        margin: 0.5rem;
+      }
+      a {
+        line-height: 0;
+        font-size: 2rem;
+        &:hover,
+        &:focus,
+        &:active {
+          svg {
+            fill: #34268d;
+          }
+        }
+      }
+    }
+  }
+  .support-link {
+    font-size: 1.6rem;
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin: 2rem auto 0;
+    color: #ffffff;
+    max-width: 18rem;
+    position: relative;
+    transition: 0.5s all ease;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 0rem;
+      width: 0rem;
+      background: #ef9b5c;
+      transition: 0.5s all ease;
+    }
+    &:hover {
+      transition: 0.5s all ease;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 0.1rem;
+        width: 18rem;
+        background: #ef9b5c;
+        transition: 0.5s all ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "../../styles/common";
+
+.user {
+  &-flexblock {
+    display: flex;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &-collection {
+    &-box {
+      padding-left: 2rem;
+      width: 100%;
+      margin-bottom: 2rem;
+      // margin-top: 3rem;
+      @media screen and (max-width: 991px) {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.user-block-nav {
+  padding-bottom: 0.5rem;
+  max-width: 30rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .nav-item {
+    padding: 0 0rem;
+    @media screen and (max-width: 425px) {
+      padding: 0;
+    }
+    .nav-link {
+      display: block;
+      margin: 0 0.3rem 0;
+      padding: 0.4rem 1.5rem;
+      transition: 0.3s;
+      position: relative;
+      text-transform: capitalize;
+      font-size: 1rem;
+
+      border-radius: 50rem;
+      border: solid 1px #ec7c49;
+      background: transparent;
+      color: #ec7c49 !important;
+      &.active {
+        font-family: $proxima-nova;
+        font-weight: 600;
+        background: transparent
+          linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0% 0% no-repeat
+          padding-box;
+        border: solid 1px transparent;
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+button.load_more {
+  text-decoration: none;
+  border-radius: 2em;
+  color: #fff;
+  border: 0.1rem solid #000;
+  margin-left: 0;
+  margin-top: 2rem;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-family: $proxima-nova;
+  font-weight: 700;
+  width: auto;
+  padding: 0.8rem 4rem;
+  font-weight: normal;
+  background: transparent linear-gradient(180deg, #ef9e5e 0%, #ec7c49 100%) 0%
+    0% no-repeat padding-box;
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+    color: #ec7c49;
+    border: 0.1rem solid #ec7c49;
+  }
+}
+
+svg.private_user_icon {
+  width: 10rem;
+  height: 10rem;
+  color: black;
+  opacity: 0.3;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 2rem;
+}

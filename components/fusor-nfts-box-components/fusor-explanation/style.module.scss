@@ -1,0 +1,157 @@
+@import "../../../styles/common";
+
+.fusor-section {
+  position: relative;
+  padding: 4rem 0;
+  .content-block {
+    margin-bottom: 2rem;
+    h4 {
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #ffffff99;
+      font-size: 1.2rem;
+    }
+    .cities-color {
+      color: #ffffff;
+    }
+  }
+
+  .image-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0 4rem;
+    img {
+      width: 21.33%;
+      height: auto;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 767px) {
+        width: 49%;
+      }
+      // @media screen and (max-width: 560px) {
+      //   width: 100%;
+      // }
+    }
+  }
+}
+
+.sec-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  .sec-title {
+    color: #ff7f00;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-family: $nunito-sans;
+    @media screen and (max-width: 767px) {
+      font-size: 1.8rem;
+    }
+  }
+  p {
+    color: #ffffffcc;
+    font-size: 1.2rem;
+  }
+}
+
+.gifanimeImages {
+  width: 25%;
+  height: 28rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  @media screen and (max-width: 767px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+
+  &.image-box-1 {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/dhoni-rookie.png");
+    animation: player1 1s infinite;
+  }
+  &.image-box-2 {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/virat-rookie.png");
+    animation: player2 1s infinite;
+  }
+  &.image-box-3 {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/rohit-rookie.png");
+    animation: player3 1s infinite;
+  }
+  &.image-box-4 {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/pandiya-rookie.png");
+    animation: player4 1s infinite;
+  }
+}
+
+@keyframes player1 {
+  0%,
+  100% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/dhoni-rookie.png");
+  }
+  25% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/dhoni-rare.png");
+  }
+  50% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/dhoni-epic.png");
+  }
+  75% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/dhoni-leg.png");
+  }
+}
+@keyframes player2 {
+  0%,
+  100% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/virat-rookie.png");
+  }
+  25% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/virat-rare.png");
+  }
+  50% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/virat-epic.png");
+  }
+  75% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/virat-leg.png");
+  }
+}
+@keyframes player3 {
+  0%,
+  100% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/rohit-rookie.png");
+  }
+  25% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/rohit-rare.png");
+  }
+  50% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/rohit-epic.png");
+  }
+  75% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/rohit-leg.png");
+  }
+}
+@keyframes player4 {
+  0%,
+  100% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/pandiya-rookie.png");
+  }
+  25% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/pandiya-rare.png");
+  }
+  50% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/pandiya-epic.png");
+  }
+  75% {
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/fusor/pandiya-leg.png");
+  }
+}

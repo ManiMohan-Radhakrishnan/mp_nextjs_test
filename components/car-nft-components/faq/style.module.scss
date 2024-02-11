@@ -1,0 +1,96 @@
+@import "../../../styles/common";
+
+.faq-section {
+  position: relative;
+  padding: 7rem 0;
+  // background: #1d1c2c;
+  background-image: url("https://cdn.guardianlink.io/product-hotspot/images/RADDX_faq_bg_v1.jpg");
+  background-position: center;
+  background-position: top center;
+  background-size: 130% 140%;
+  //   background-image: url(/_next/static/media/Group-image.de8ddb3c.png);
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   inset: 0 0 0 0;
+  //   background: #656565a6;
+  //   backdrop-filter: blur(1rem);
+  // }
+  &::before {
+    content: "";
+    // background-image: url("../../../images/drop/car-nft-images/faq-background.png");
+
+    background: linear-gradient(180deg, #000000a8 8%, transparent 90%);
+
+    position: absolute;
+    inset: 0 0 0 0;
+    backdrop-filter: blur(0.4rem);
+  }
+  .bg-faq {
+    position: absolute;
+    opacity: 0.1;
+    max-height: 35rem;
+    left: 0;
+    top: 12rem;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    width: 100%;
+    max-width: 50rem;
+    height: 100%;
+  }
+  .faq-content-section {
+    position: relative;
+    .faq-heading {
+      padding: 0.5rem 1rem;
+      text-align: center;
+      font-family: $hubolt-sans-bold-narrow;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+      // span {
+      //   color: #ffdd98;
+      // }
+    }
+    .faq-accordian-section {
+      width: 100%;
+      max-width: 60rem;
+      margin: auto;
+      background: linear-gradient(119deg, #000000, #00000099);
+      .accord-content-block {
+        h2 {
+          background: transparent;
+          font-size: 1.2rem;
+          padding: 1.3rem;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-weight: 400;
+          border-bottom: 0.1rem solid #70707033;
+          user-select: none;
+          cursor: pointer;
+          svg {
+            margin-right: 0.5rem;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            display: flex;
+            align-self: baseline;
+          }
+        }
+        .accord-collapse-block {
+          padding: 1.5rem;
+          padding-left: 3rem;
+          font-weight: 400;
+          font-size: 1.1rem;
+          border-bottom: 0.1rem solid #70707033;
+          p {
+            margin: 0;
+            color: #ffffffcc;
+          }
+        }
+      }
+    }
+  }
+}

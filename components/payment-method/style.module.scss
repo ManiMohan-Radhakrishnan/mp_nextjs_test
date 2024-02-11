@@ -1,0 +1,52 @@
+@import "../../styles/common";
+
+@mixin gradient-button {
+  width: 16rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem 1.8rem;
+  border: none;
+  background: transparent linear-gradient(95deg, #ef9f5e 0%, #ec7c49 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+}
+
+.prefered-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+  .block-title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .upi-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    border: 0.1rem solid #cccccc;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      box-shadow: 0px 3px 6px #00000029;
+      border: 0.1rem solid #000000;
+    }
+  }
+}
+.button-block {
+  // margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  button {
+    @include gradient-button;
+    width: 100%;
+  }
+}

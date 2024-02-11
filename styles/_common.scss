@@ -1,0 +1,374 @@
+$xl-width: 1200px;
+$lg-width: 992px;
+$md-width: 768px;
+$sm-width: 576px;
+
+$xl-max-width: 1160px;
+$lg-max-width: 882px;
+$md-max-width: 774px;
+$sm-max-width: 650px;
+
+// $futura: "Furuta" !important;
+
+$dark-color: #000;
+$little-dark-color: #222;
+$theme-color: #871dc4;
+$theme-color-lite: #c784ed;
+
+//#fc7a4f
+
+// Helper
+
+@mixin text-ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// new fonts
+
+@font-face {
+  font-family: "neue_helvetica_bold";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 75\ Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_light";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 45\ Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_thin";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 35\ Thin.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_ultralight";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 25\ Ultra\ Light.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_roman";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 55\ Roman.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_medium";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 65\ Medium.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_heavy";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 85\ Heavy.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_black";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 95\ Black.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue_helvetica_extended";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 53\ Extended.ttf")
+    format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "neue_helvetica_extended_bold";
+  src: url("../fonts/new/Helvetica\ Neue\ LT\ 73\ Bold\ Extended.ttf")
+    format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Impact;
+  src: url("../fonts/new/impact.ttf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "hubolt_sans_bold";
+  src: url("../fonts/Hubot-Sans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hubolt_sans_bold_narrow";
+  src: url("../fonts/Hubot-Sans-BoldNarrow.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hubolt_sans_black";
+  src: url("../fonts/Hubot-Sans-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hubolt_sans_black_narrow";
+  src: url("../fonts/Hubot-Sans-BlackNarrow.woff") format("woff");
+}
+
+// $neue-helvetica-thin: "neue_helvetica_thin" !important;
+// $neue-helvetica-ultralight: "neue_helvetica_ultralight" !important;
+$neue-helvetica-light: "neue_helvetica_light" !important; // 400
+$neue-helvetica-bold: "neue_helvetica_bold" !important; // 800 or 900
+$neue-helvetica-roman: "neue_helvetica_roman" !important; // 600
+$neue-helvetica-medium: "neue_helvetica_medium" !important; // 700
+// $neue-helvetica-heavy: "neue_helvetica_heavy" !important;
+// $neue-helvetica-black: "neue_helvetica_black" !important;
+// $neue-helvetica-extended: "neue_helvetica_extended" !important;
+// $neue-helvetica-extended-bold: "neue_helvetica_extended_bold" !important;
+$Impact: "Impact" !important;
+$hubolt-sans-bold: "hubolt_sans_bold" !important;
+$hubolt-sans-bold-narrow: "hubolt_sans_bold_narrow" !important;
+$hubolt-sans-black: "hubolt_sans_black" !important;
+$hubolt-sans-black-narrow: "hubolt_sans_black_narrow" !important;
+
+@media only screen and (min-width: 2100px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 80%;
+  }
+}
+
+// proxima-nova Font family
+
+@import url("https://p.typekit.net/p.css?s=1&k=iyv3ite&ht=tk&f=137.139.169.173.175&a=99203635&app=typekit&e=css");
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/8738d8/00000000000000007735e611/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n8&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8738d8/00000000000000007735e611/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n8&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8738d8/00000000000000007735e611/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n8&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+// nunito-sans Font family
+@import url("https://p.typekit.net/p.css?s=1&k=aby4vee&ht=tk&f=40496&a=99203635&app=typekit&e=css");
+
+@font-face {
+  font-family: "nunito-sans";
+  src: url("https://use.typekit.net/af/1321cb/00000000000000007735b909/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/1321cb/00000000000000007735b909/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/1321cb/00000000000000007735b909/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+$proxima-nova: "proxima-nova" !important;
+$nunito-sans: "nunito-sans" !important; //Bold Heading
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;800&display=swap");
+
+$orbitron: "Orbitron", sans-serif !important;
+
+@font-face {
+  font-family: "hubolt_sans_bold";
+  src: url("../fonts/Hubot-Sans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hubolt_sans_bold_narrow";
+  src: url("../fonts/Hubot-Sans-BoldNarrow.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hubolt_sans_black";
+  src: url("../fonts/Hubot-Sans-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hubolt_sans_black_narrow";
+  src: url("../fonts/Hubot-Sans-BlackNarrow.woff") format("woff");
+}
+@font-face {
+  font-family: "Impact";
+  src: url("../fonts/new/impact.ttf") format("opentype");
+}
+
+// proxima-nova Font family
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_black-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_black-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_semibold-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_semibold-webfont.woff2")
+      format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_regular-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_regular-webfont.woff2")
+      format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+// nunito-sans Font family
+
+@font-face {
+  font-family: "nunito-sans";
+  src: url("../fonts/nunito-sans/nunitosans-bold-webfont.woff") format("woff2"),
+    url("../fonts/nunito-sans/nunitosans-bold-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+$proxima-nova: "proxima-nova" !important;
+$nunito-sans: "nunito-sans" !important; //Bold Heading
+$hubolt-sans-bold: "hubolt_sans_bold" !important;
+$hubolt-sans-bold-narrow: "hubolt_sans_bold_narrow" !important;
+$hubolt-sans-black: "hubolt_sans_black" !important;
+$hubolt-sans-black-narrow: "hubolt_sans_black_narrow" !important;
+$Impact: "Impact" !important;
+@media only screen and (min-width: 2100px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 80%;
+  }
+}
+
+.theme-yellow-text {
+  color: #e6d44d;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,900;6..12,1000&display=swap");
+$nunito-sans-new: "Nunito Sans", sans-serif !important;

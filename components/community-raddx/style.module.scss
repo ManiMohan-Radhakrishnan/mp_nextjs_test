@@ -1,0 +1,116 @@
+@import "../../styles/common";
+
+.community-section {
+  //   background-color: black;
+  background-image: url("https://cdn.guardianlink.io/product-hotspot/images/jumptrade/group-imagede8ddb3c-1.webp");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background-repeat: repeat;
+  background-size: contain;
+  // background-color: #141321;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #34268d, #a5207c) 0 0 no-repeat
+      padding-box;
+    opacity: 0.3;
+  }
+  > .content-container {
+    z-index: 2;
+    position: relative;
+  }
+  .content-center {
+    position: relative;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto 2rem;
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      font-family: $nunito-sans;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 767px) {
+        font-size: 2.3rem;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #ebebebcc;
+      font-weight: 400;
+    }
+  }
+  .social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    // justify-content: center;
+    li {
+      height: 2.8rem;
+      width: 2.8rem;
+      margin: 0 0.5rem;
+      border: 0.1rem solid #ed844e;
+      border-radius: 50rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      a {
+        line-height: 0;
+        color: #ffffff;
+        &:hover,
+        &:focus,
+        &:active {
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .support-link {
+    font-size: 1.6rem;
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin: 2rem auto 0;
+    color: #ffffff;
+    max-width: 18rem;
+    position: relative;
+    transition: 0.5s all ease;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 0rem;
+      width: 0rem;
+      background: #ef9b5c;
+      transition: 0.5s all ease;
+    }
+    &:hover {
+      transition: 0.5s all ease;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 0.1rem;
+        width: 18rem;
+        background: #ef9b5c;
+        transition: 0.5s all ease;
+      }
+    }
+  }
+}

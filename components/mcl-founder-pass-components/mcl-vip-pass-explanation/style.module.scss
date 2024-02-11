@@ -1,0 +1,46 @@
+@import "../../../styles/common";
+
+.fusor-section {
+  position: relative;
+  padding: 4rem 0;
+  .content-block {
+    margin-bottom: 2rem;
+    h4 {
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #ffffff99;
+      font-size: 1.2rem;
+    }
+    .cities-color {
+      color: #ffffff;
+    }
+  }
+}
+
+.sec-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  .sec-title {
+    color: #ff7f00;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-family: $nunito-sans;
+    @media screen and (max-width: 767px) {
+      font-size: 1.8rem;
+    }
+  }
+  p {
+    color: #ffffffcc;
+    font-size: 1.2rem;
+  }
+}

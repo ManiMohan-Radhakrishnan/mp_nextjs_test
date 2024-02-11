@@ -1,0 +1,130 @@
+@import "../../styles/common";
+
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin modal-header {
+  color: white;
+  background: transparent linear-gradient(97deg, #5d0e4e 0%, #722807 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 0px 16px #00000099;
+  // border: 2px solid #671101;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+@mixin gradient-button {
+  width: 16rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem 1.8rem;
+  border: none;
+  background: transparent linear-gradient(95deg, #ef9f5e 0%, #ec7c49 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+  &:disabled {
+    // background-color: #cccccc;
+    opacity: 0.5;
+  }
+}
+
+@mixin base-model {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  &-header {
+    @include modal-header;
+  }
+  &-body {
+    border-radius: 0 0 1.5rem 1.5rem;
+    @include flex-column;
+    .link {
+      &.link-orange {
+        color: var(--ck-theme);
+      }
+      &.link-blue {
+        color: var(--bs-blue);
+      }
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+      &.link-disabled {
+        color: var(--bs-gray-500);
+        cursor: default;
+        text-decoration: none;
+      }
+    }
+    .input-block {
+      color-scheme: none;
+      position: relative;
+      @include flex-column;
+      margin-bottom: 1rem !important;
+      .link {
+        align-self: flex-end;
+      }
+      .error-text {
+        font-size: 0.8rem;
+        color: #f21e00;
+        margin-bottom: 0.25rem !important;
+      }
+    }
+    .input-block-row {
+      @include flex-row;
+      color-scheme: none;
+      // gap: 0.5rem;
+      margin-bottom: 0.3rem;
+      &.valign-top {
+        align-items: flex-start;
+      }
+      p,
+      h6 {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 1.1rem;
+      }
+      label {
+        margin: 0;
+      }
+      .quantity-counter {
+        padding: 0rem 0.5rem;
+        max-width: 3.5rem;
+        // text-align: end;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem !important;
+        height: auto !important;
+        line-height: 0;
+        border: 1px solid #c0c0c0;
+        border-radius: 0.3rem;
+      }
+    }
+    #checkPayment {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+    .button-block {
+      // margin: 1rem 0;
+      @include flex-row-center;
+      button {
+        @include gradient-button;
+      }
+    }
+  }
+}
+
+.payment-modal {
+  @include base-model;
+}

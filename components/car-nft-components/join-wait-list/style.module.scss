@@ -1,0 +1,318 @@
+@import "../../../styles/common";
+.super-loot-section {
+  position: relative;
+  display: flex;
+  min-height: 40vh;
+  overflow: hidden;
+  padding: 5rem 0 0;
+  background: #000000;
+  * {
+    text-align: center;
+  }
+  .super-loot-content-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    .super-loot-content-block {
+      width: 100%;
+      max-width: 44rem;
+      position: relative;
+      @media screen and (max-width: 769px) {
+        padding: 2rem 0;
+      }
+      h3 {
+        font-family: $hubolt-sans-bold-narrow;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        @media screen and (max-width: 769px) {
+          font-size: 2rem;
+          white-space: normal;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        @media screen and (max-width: 769px) {
+          padding: 0 2rem;
+        }
+      }
+      .badge-box {
+        @media screen and (max-width: 769px) {
+          margin: 0;
+          max-width: 100%;
+        }
+        position: relative;
+        max-width: 47rem;
+        img {
+          height: auto;
+          width: 100%;
+        }
+        .badge-content-box {
+          position: absolute;
+          inset: -1.5rem 0 0 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          color: #000;
+          h3 {
+            font-family: $hubolt-sans-bold-narrow;
+            margin-bottom: 0;
+            font-size: 2rem;
+            @media screen and (max-width: 560px) {
+              font-size: 1.6rem;
+            }
+          }
+          h5 {
+            padding: 0rem;
+            margin: 0;
+            color: #000;
+            font-weight: 400;
+            letter-spacing: 0.05rem;
+            font-size: 1.1rem;
+          }
+          @media screen and (max-width: 769px) {
+            align-items: center;
+            margin: 0;
+          }
+        }
+        // background: url("../../images/jump-trade/onedollar/Badge-Alone.svg");
+      }
+    }
+    .badge-img-block {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      .badge-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 13rem;
+        max-width: 28rem;
+
+        padding: 3rem 1rem;
+        @media screen and (max-width: 1365px) {
+          padding: 2rem 1rem;
+          max-width: 24rem;
+        }
+        @media screen and (max-width: 991px) {
+          padding: 0.5rem;
+          max-width: 20rem;
+        }
+        @media screen and (max-width: 880px) {
+          position: static;
+          margin: 0rem auto 0;
+          top: 13rem;
+          max-width: 28rem;
+          padding: 2rem !important;
+          border: 1px solid #e6d44d;
+          border-radius: 0.2rem;
+        }
+
+        h3 {
+          font-family: $hubolt-sans-bold;
+          font-weight: 800;
+          font-size: 1.8rem;
+          white-space: nowrap;
+          margin-bottom: 0.3rem;
+          span {
+            color: #e6d44d;
+            font-family: $hubolt-sans-black;
+          }
+          @media screen and (max-width: 1365px) {
+            font-size: 1.6rem;
+          }
+          @media screen and (max-width: 991px) {
+            font-size: 1.3rem;
+          }
+        }
+        h5 {
+          color: #ffffff80;
+          font-weight: 300;
+          font-size: 1.1rem;
+          letter-spacing: 0.08rem;
+          @media screen and (max-width: 1365px) {
+            font-size: 0.9rem;
+          }
+          @media screen and (max-width: 991px) {
+            font-size: 0.8rem;
+          }
+        }
+        h6 {
+          color: #ebebeb;
+          font-weight: 300;
+          letter-spacing: 0.03rem;
+          margin-top: 2rem;
+          font-size: 1.1rem;
+          padding-top: 2rem;
+          border-top: 0.05rem dashed #ffffff80;
+          @media screen and (max-width: 1365px) {
+            font-size: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+          }
+          @media screen and (max-width: 991px) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      .video-fixed {
+        object-fit: contain;
+        // margin-top: -4rem;
+        width: 100%;
+        height: auto;
+        // max-width: 80rem;
+      }
+    }
+  }
+
+  .join-waitlist-form-block {
+    margin: 0 auto;
+    /* overflow: hidden; */
+    width: 100%;
+    padding: 5rem 2rem;
+    background: linear-gradient(90deg, #34268d 0%, #a5207c 100%) 0% 0% no-repeat
+      padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .join-waitlist-form-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+    h6 {
+      text-transform: uppercase;
+      margin-right: 1rem;
+      font-family: $hubolt-sans-bold-narrow;
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 1rem;
+        margin-top: 0;
+      }
+    }
+    .getappLinkCheckbox {
+      text-align: center;
+
+      .link {
+        cursor: pointer;
+        &.link-orange {
+          color: #ea337f;
+        }
+      }
+    }
+    .join-waitlist-form {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      overflow: hidden;
+      flex-direction: column;
+      max-width: 35rem;
+      width: 100%;
+
+      &.singleline {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        position: relative;
+        overflow: visible;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          button {
+            width: 11rem;
+            margin-left: auto;
+          }
+          input {
+            // margin-bottom: 1rem;
+            width: 100%;
+          }
+        }
+        @media screen and (max-width: 460px) {
+          input,
+          button {
+            width: 100%;
+          }
+        }
+      }
+      input {
+        height: 3rem;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent;
+        color: #fff;
+        border: 0.1rem solid #ffffff !important;
+        padding: 0.5rem 1rem;
+        width: calc(100% - 10rem);
+        outline: 0 !important;
+        font-size: 1.1rem !important;
+        // margin-right: 1rem;
+        text-align: left;
+        border-radius: 0.5rem;
+        &::placeholder {
+          color: #bfbfc0;
+        }
+      }
+      button {
+        color: #fff;
+        display: block;
+        margin: 0 0.3rem 0;
+        padding: 0.5rem 1.5rem;
+        transition: 0.3s;
+        position: relative;
+        text-transform: capitalize;
+        font-size: 1rem;
+        background: #ea337f;
+        border: solid 1px transparent;
+        border-radius: 0.5rem;
+        font-family: "proxima-nova" !important;
+        font-weight: 600;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.2rem;
+        height: 100%;
+        &:hover,
+        &:focus,
+        &:active {
+          border: solid 1px #ea337f !important;
+          background: transparent;
+          color: #ea337f !important;
+        }
+      }
+    }
+    .success-message {
+      text-align: left;
+      color: #fff;
+      padding: 0 0.4rem;
+      // position: absolute;
+      top: 100%;
+      margin-top: 0.5rem;
+      * {
+        text-align: left;
+      }
+
+      a {
+        text-decoration: underline;
+        color: #ea337f;
+      }
+      @media screen and (max-width: 767px) {
+        position: static;
+      }
+    }
+
+    @media screen and (max-width: 769px) {
+      padding: 2rem;
+    }
+  }
+}

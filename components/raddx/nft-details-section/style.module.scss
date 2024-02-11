@@ -1,0 +1,113 @@
+@import "../../../styles/common";
+
+.nft-detail-progress-section {
+  padding: 4rem 0rem 0rem;
+  background: #1d1c2c;
+  .nft-detail-wrapper {
+    .section-title {
+      margin: 2rem 0 2rem 0;
+      font-size: 2.2rem;
+      font-family: "proxima-nova" !important;
+      font-weight: bold;
+      border-bottom: 2px solid #363641;
+      padding-bottom: 0rem;
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      .bundle-list {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-left: 1rem;
+
+        .bundle-list-item {
+          font-size: 1.2rem;
+          padding: 0.8rem 1rem;
+          color: #b2b2b2;
+          font-weight: 400;
+          cursor: pointer;
+
+          &.active {
+            color: #ef9d5d;
+            border-bottom: 0.1rem solid;
+          }
+        }
+      }
+    }
+  }
+
+  .performance-traits,
+  .upgrade-traits {
+    .title-block {
+      h4 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .trait-block {
+      .trait {
+        margin-bottom: 1rem;
+        .trait-title {
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
+          font-weight: 400;
+          color: #ffffff80;
+        }
+        .trait-progress-block {
+          display: flex;
+          // max-width: 40rem;
+          .trait-progress-box {
+            position: relative;
+            width: calc(100% - 9rem);
+            margin-right: 1rem;
+            transform: skew(-45deg);
+            border-radius: 0.1rem;
+            background: #484661;
+            .primary-progress-bar {
+              background: transparent
+                linear-gradient(266deg, #fff7cc 0%, #ec7c49 100%) 0% 0%
+                no-repeat padding-box;
+            }
+            .secondary-progress-bar {
+              background: transparent
+                linear-gradient(230deg, #f7dd51 0%, #ff4e00 100%) 0% 0%
+                no-repeat padding-box;
+              position: relative;
+              overflow: visible;
+              &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                box-shadow: 0.2rem 0 0.2rem #ffff0099;
+              }
+            }
+          }
+          .progress-text {
+            margin: 0;
+            font-size: 1rem;
+            width: 9rem;
+            font-weight: 400;
+            color: #ffffffe0;
+            text-shadow: 0 0 0.2rem #ffffff66;
+            letter-spacing: 0.05rem;
+            span {
+              color: #f8c845;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dashed-border {
+  border-bottom: 0.1rem dashed #363641;
+  margin-top: 4rem;
+}
