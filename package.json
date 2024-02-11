@@ -56,8 +56,7 @@
     "read-more-react": "^1.0.10",
     "sass": "^1.70.0",
     "sharp": "^0.31.1",
-    "swiper": "^8.3.2",
-    "video-react": "^0.16.0"
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "8.20.0",
