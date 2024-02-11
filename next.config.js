@@ -2,11 +2,15 @@
 const nextBuildId = require("next-build-id");
 const nextConfig = {
   output: "export",
+
   // experimental: {
   //   // target: "serverless",
-
+  images: {
+    unoptimized: true,
+  },
   //   // optimizeCss: true,
   // },
+  distDir: "build",
   reactStrictMode: true,
   swcMinify: true,
   // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
