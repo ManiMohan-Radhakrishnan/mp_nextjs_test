@@ -5,9 +5,7 @@ const nextConfig = {
 
   // experimental: {
   //   // target: "serverless",
-  images: {
-    unoptimized: true,
-  },
+
   //   // optimizeCss: true,
   // },
   distDir: "build",
@@ -40,6 +38,7 @@ const nextConfig = {
       "q.quora.com",
       "glcdn.jump.trade",
     ],
+    unoptimized: true,
   },
   generateBuildId: () => nextBuildId({ dir: __dirname }),
 };
