@@ -3,6 +3,7 @@ import Footer from "../../../components/footer";
 import LiveAuctionsList from "../../../components/live-auction-list";
 import { filter } from "lodash";
 import { errorRedirect, getMetaDetails } from "../../../utils/common";
+export const runtime = "experimental-edge";
 
 const Page = ({ meta_information }) => {
   const metaDetails = meta_information;

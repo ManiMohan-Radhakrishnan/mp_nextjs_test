@@ -13,6 +13,7 @@ import {
 import { CELEBRITIES } from "../../utils/celebrity-config";
 import AppHelmet from "../../components/helmet";
 import { getMetaDetails } from "../../utils/common";
+export const runtime = "experimental-edge";
 
 const ExploreAll = ({ listedNFTs, celebrity, meta_information }) => {
   const router = useRouter();

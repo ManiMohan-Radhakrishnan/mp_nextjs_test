@@ -13,7 +13,7 @@ import AboutMcl from "../../components/loot-components/about-mcl";
 
 import "react-phone-input-2/lib/bootstrap.css";
 import style from "./style.module.scss";
-
+export const runtime = "experimental-edge";
 export async function getServerSideProps() {
   if (!process.env.NEXT_PUBLIC_DROP_ONE_DOLLAR_SLUG)
     return {

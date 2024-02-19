@@ -7,6 +7,7 @@ import {
   getBlogMetaApi,
 } from "../../utils/methods";
 import { errorRedirect } from "../../utils/common";
+export const runtime = "experimental-edge";
 
 const BlogDetails = (props) => {
   return (
@@ -44,7 +45,7 @@ export async function getServerSideProps({ query }) {
     const filteredBlogData = blogData?.data?.filter((item) =>
       item?.categories?.includes(filteredCategoryData[0].id)
     );
-    let arr2 = [1796,1771,1746,1724];
+    let arr2 = [1796, 1771, 1746, 1724];
     let res = filteredBlogData.filter((item) => arr2.includes(item.id));
 
     props = {

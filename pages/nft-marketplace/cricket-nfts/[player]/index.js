@@ -4,6 +4,7 @@ import ExploreAllNFT from "../../../../components/explore/explore-all-nft";
 import Footer from "../../../../components/footer";
 import { getExplorePageMetaData } from "../../../../utils/common";
 import { CELEBRITIES } from "../../../../utils/celebrity-config";
+export const runtime = "experimental-edge";
 
 const PlayerPath = ({ listedNFTs, pageMetaData, celebrity }) => {
   return (

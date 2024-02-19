@@ -37,7 +37,7 @@ import RaddxLandBenefits from "../../components/raddx-land/how-to-monetize";
 
 //   return { props: {} };
 // }
-
+export const runtime = "experimental-edge";
 const RaddxLandDrop = () => {
   const dispatch = useDispatch();
   const [raddxLandLootDetails, setLandLootDetails] = useState({});

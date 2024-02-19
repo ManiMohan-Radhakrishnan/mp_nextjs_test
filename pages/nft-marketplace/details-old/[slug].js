@@ -22,6 +22,7 @@ import BidHistory from "../../../components/bid-history";
 import NFTOrderDetails from "../../../components/nft-order-details";
 import OwnerList from "../../../components/owner-list";
 import { errorRedirect } from "../../../utils/common";
+export const runtime = "experimental-edge";
 
 const Details = ({
   nft,

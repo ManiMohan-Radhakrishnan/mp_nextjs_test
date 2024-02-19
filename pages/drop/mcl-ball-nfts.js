@@ -12,6 +12,7 @@ import { getMetaDetails } from "../../utils/common";
 import AppHelmet from "../../components/helmet";
 import MclBallLootBoxSection from "../../components/mcl-ball-nfts";
 import BannerSection from "../../components/mcl-ball-nfts/banner-section";
+export const runtime = "experimental-edge";
 
 export async function getServerSideProps({ req }) {
   const pathName = req?.url;

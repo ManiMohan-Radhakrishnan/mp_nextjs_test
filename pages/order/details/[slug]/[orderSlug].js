@@ -46,6 +46,7 @@ import { get_cart_list_thunk } from "../../../../redux/thunk/user_cart_thunk";
 import toaster from "../../../../utils/toaster";
 import { NFTLoader } from "../../../../components/nft-basic-details/content-loader";
 import { errorRedirect } from "../../../../utils/common";
+export const runtime = "experimental-edge";
 
 const OrderDetails = (props) => {
   const router = useRouter();

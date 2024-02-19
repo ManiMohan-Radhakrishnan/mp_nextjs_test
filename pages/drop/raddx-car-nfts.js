@@ -7,7 +7,7 @@ import Footer from "../../components/footer";
 import Community from "../../components/car-nft-components/car-community";
 import Header from "../../components/header";
 import ReferWin from "../../components/car-nft-components/refer-win";
-
+export const runtime = "experimental-edge";
 export async function getServerSideProps() {
   return {
     redirect: {

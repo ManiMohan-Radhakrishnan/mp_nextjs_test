@@ -7,6 +7,7 @@ import {
   getBlogListApi,
 } from "../../utils/methods";
 import { errorRedirect } from "../../utils/common";
+export const runtime = "experimental-edge";
 
 const Blog = (props) => {
   return (
@@ -31,8 +32,7 @@ export async function getServerSideProps() {
       (data) => data.slug === "blog"
     );
 
-  
-  //console.log(filteredCategoryData, "filteredCategoryData");
+    //console.log(filteredCategoryData, "filteredCategoryData");
     const filteredBlogData = blogData?.data?.filter((item) =>
       item.categories.includes(filteredCategoryData[0].id)
     );

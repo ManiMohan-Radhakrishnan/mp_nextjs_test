@@ -3,6 +3,7 @@ import Footer from "../../components/footer";
 import AnnounceDetail from "../../components/blogs/announcedetails";
 import { getBlogCateListApi, getBlogCattApi } from "../../utils/methods";
 import { errorRedirect } from "../../utils/common";
+export const runtime = "experimental-edge";
 
 const AnnouncementDetails = (props) => {
   return (

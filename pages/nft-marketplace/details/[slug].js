@@ -4,6 +4,7 @@ import {
   getDetailsComponent,
   getOrderDetailsComponent,
 } from "../../../utils/celebrity-config";
+export const runtime = "experimental-edge";
 
 const NFTDetails = (props) => {
   const OrderDetailsComponent = getOrderDetailsComponent(

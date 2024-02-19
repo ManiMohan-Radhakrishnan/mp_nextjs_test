@@ -9,6 +9,7 @@ import {
   nftCategoryListApi,
 } from "../../../../utils/methods";
 import { setCookiesByName } from "../../../../utils/cookies";
+export const runtime = "experimental-edge";
 
 const ExploreList = ({ exploreListedNFTs, categoryListedNFTs }) => {
   const router = useRouter();

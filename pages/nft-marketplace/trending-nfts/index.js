@@ -3,6 +3,7 @@ import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import TrendingList from "../../../components/trending-list";
 import { trendingNFTsApi } from "../../../utils/methods";
+export const runtime = "experimental-edge";
 
 const TrendingNFTs = () => {
   return (

@@ -24,6 +24,7 @@ import HomeMegaPlayPass from "../components/play-pass-mega-home";
 
 // import ogImage from "../images/JT_OG_image.jpg";
 import AppHelmet from "../components/helmet";
+export const runtime = "experimental-edge";
 
 export default function Home(props) {
   const router = useRouter();

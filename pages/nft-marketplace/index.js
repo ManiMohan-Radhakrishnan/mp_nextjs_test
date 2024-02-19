@@ -1,4 +1,5 @@
 import { CELEBRITIES, isValidCelebrity } from "../../utils/celebrity-config";
+export const runtime = "experimental-edge";
 
 const ExploreAll = () => {
   return <></>;

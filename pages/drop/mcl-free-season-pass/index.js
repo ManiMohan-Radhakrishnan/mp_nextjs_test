@@ -19,7 +19,7 @@ import MclSeasonPassFaq from "../../../components/mcl-free-season-pass/faq-mcl-s
 import MclSeasonPassBanner from "../../../components/mcl-free-season-pass/mcl-season-pass-banner";
 import PrizeBreakupSeasonPass from "../../../components/mcl-free-season-pass/prize-breakup-season-pass";
 import StaticFlowsSeasonPass from "../../../components/mcl-free-season-pass/static-flows-mcl-season-pass";
-
+export const runtime = "experimental-edge";
 // const loot = {
 //   available_qty: 15000,
 //   buy_amount: "0.0",

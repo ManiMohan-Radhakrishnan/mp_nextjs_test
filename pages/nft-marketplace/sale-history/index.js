@@ -3,6 +3,7 @@ import Header from "../../../components/header";
 import RecentlySoldList from "../../../components/recently-sold-list";
 import { errorRedirect } from "../../../utils/common";
 import { nftRecentlySoldApi } from "../../../utils/methods";
+export const runtime = "experimental-edge";
 
 const RecentlySold = () => {
   return (

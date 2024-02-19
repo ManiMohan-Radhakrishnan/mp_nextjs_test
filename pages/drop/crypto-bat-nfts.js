@@ -14,6 +14,7 @@ import StaticFlows from "../../components/bat-nft-components/StaticFlows";
 import AppHelmet from "../../components/helmet";
 
 import "react-phone-input-2/lib/bootstrap.css";
+export const runtime = "experimental-edge";
 
 export async function getServerSideProps({ req }) {
   const pathName = req?.url;

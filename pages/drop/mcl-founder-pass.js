@@ -17,6 +17,7 @@ import StaticFlowsVipPass from "../../components/mcl-founder-pass-components/Sta
 import EliteFounderPassBoxDetails from "../../components/mcl-founder-pass-components/elite-founder-pass";
 import OneFounder from "../../components/mcl-founder-pass-components/one-founder";
 import AppHelmet from "../../components/helmet";
+export const runtime = "experimental-edge";
 
 export async function getServerSideProps({ query, req }) {
   const pathName = req?.url;

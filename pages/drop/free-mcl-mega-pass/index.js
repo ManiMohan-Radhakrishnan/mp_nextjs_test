@@ -32,6 +32,7 @@ import MegaPassShortBoxDetails from "../../../components/mcl-mega-pass-short-nft
 import PrizeBreakupMega from "../../../components/mcl-game-code-components/prize-breakup-mega";
 import { getMetaDetails } from "../../../utils/common";
 import AppHelmet from "../../../components/helmet";
+export const runtime = "experimental-edge";
 
 // const loot = {
 //   available_qty: 15000,

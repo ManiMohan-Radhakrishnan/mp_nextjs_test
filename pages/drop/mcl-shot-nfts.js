@@ -13,7 +13,7 @@ import { isUserLoggedIn } from "../../redux/reducers/user_reducer";
 import ReferWin from "../../components/mcl-action-nfts-components/refer-win";
 import { getMetaDetails } from "../../utils/common";
 import AppHelmet from "../../components/helmet";
-
+export const runtime = "experimental-edge";
 export async function getServerSideProps({ req }) {
   const pathName = req?.url;
   const metaDetails = getMetaDetails(pathName);

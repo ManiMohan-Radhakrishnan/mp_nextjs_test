@@ -17,6 +17,7 @@ import FaqSection from "../../components/fusor-nfts-box-components/faq-section";
 import StaticFlows from "../../components/fusor-nfts-box-components/StaticFlows";
 import FieldingSpecial from "../../components/fusor-nfts-box-components/fielding-special";
 import store from "../../redux/store";
+export const runtime = "experimental-edge";
 
 export async function getServerSideProps({ query, req }) {
   const pathName = req?.url;
