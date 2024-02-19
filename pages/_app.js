@@ -26,6 +26,7 @@ import {
 } from "../redux/reducers/user_reducer";
 import { SSRProvider } from "react-bootstrap";
 // import { SSRProvider } from "react-bootstrap";
+export const runtime = "edge";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
