@@ -11,7 +11,7 @@ import AppHelmet from "../../components/helmet";
 
 const SUPPORTED_NFT_TYPES = ["players", "bats"];
 
-// export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 export async function getServerSideProps({ query, resolvedUrl }) {
   let { nftType = "players" } = query;

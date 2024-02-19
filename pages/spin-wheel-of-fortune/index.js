@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import WheelOfFortune from "../../components/wheel-of-fortune-custom";
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 // Comment the below function the SPIN WHEEL
 export async function getServerSideProps() {
