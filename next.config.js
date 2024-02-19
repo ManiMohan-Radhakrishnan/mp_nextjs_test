@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextBuildId = require("next-build-id");
 const nextConfig = {
-  // experimental: {
-  //   runtime: "edge",
-  // },
+  experimental: {
+    runtime: "experimental-edge",
+  },
   // experimental: {
   //   // target: "serverless",
 
