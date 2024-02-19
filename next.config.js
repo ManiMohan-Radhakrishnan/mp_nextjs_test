@@ -2,7 +2,7 @@
 const nextBuildId = require("next-build-id");
 const nextConfig = {
   experimental: {
-    runtime: "experimental-edge",
+    runtime: "edge",
   },
   // experimental: {
   //   // target: "serverless",
