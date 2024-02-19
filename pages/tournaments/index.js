@@ -11,8 +11,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import TournamentScheduleList from "../../components/tournament-schedule-list";
 import AppHelmet from "../../components/helmet";
-export const dynamic = "force-static";
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 const Tournaments = ({ meta_information }) => {
   const metaDetails = meta_information;
